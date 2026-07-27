@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **251 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **256 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,7 +19,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-251 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+256 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
 ### Analysis, BI & general (122)
 
@@ -183,7 +183,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [terraform-patterns](terraform-patterns/SKILL.md) | This skill should be used when the user asks to "analyze Terraform modules", "scan IaC for security issues", "review Terraform configurations", "check infrastructure code for misconfigurations", or "audit cloud resour... |
 | [terraform-style-guide](terraform-style-guide/SKILL.md) | Generate Terraform HCL code following HashiCorp's official style conventions and best practices. |
 
-### Full-stack development (40)
+### Full-stack development (45)
 
 > Added from [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills) (MIT). See [ATTRIBUTION.md](ATTRIBUTION.md).
 
@@ -203,8 +203,11 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [fastapi-expert](fastapi-expert/SKILL.md) | Use when building high-performance async Python APIs with FastAPI and Pydantic V2. |
 | [feature-forge](feature-forge/SKILL.md) | Conducts structured requirements workshops to produce feature specifications, user stories, EARS-format functional requirements, acceptance criteria, and implementation checklists. |
 | [fine-tuning-expert](fine-tuning-expert/SKILL.md) | Use when fine-tuning LLMs, training custom models, or adapting foundation models for specific tasks. |
+| [flutter-expert](flutter-expert/SKILL.md) | Use when building cross-platform applications with Flutter 3+ and Dart. |
 | [fullstack-guardian](fullstack-guardian/SKILL.md) | Builds security-focused full-stack web applications by implementing integrated frontend and backend components with layered security at every level. |
+| [game-developer](game-developer/SKILL.md) | Use when building game systems, implementing Unity/Unreal Engine features, or optimizing game performance. |
 | [javascript-pro](javascript-pro/SKILL.md) | Writes, debugs, and refactors JavaScript code using modern ES2023+ features, async/await patterns, ESM module systems, and Node.js APIs. |
+| [kotlin-specialist](kotlin-specialist/SKILL.md) | Provides idiomatic Kotlin implementation patterns including coroutine concurrency, Flow stream handling, multiplatform architecture, Compose UI construction, Ktor server setup, and type-safe DSL design. |
 | [kubernetes-specialist](kubernetes-specialist/SKILL.md) | Use when deploying or managing Kubernetes workloads. |
 | [legacy-modernizer](legacy-modernizer/SKILL.md) | Designs incremental migration strategies, identifies service boundaries, produces dependency maps and migration roadmaps, and generates API facade designs for aging codebases. |
 | [mcp-developer](mcp-developer/SKILL.md) | Use when building, debugging, or extending MCP servers or clients that connect AI systems with external tools and data sources. |
@@ -219,12 +222,14 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [python-pro](python-pro/SKILL.md) | Use when building Python 3.11+ applications requiring type safety, async programming, or robust error handling. |
 | [rag-architect](rag-architect/SKILL.md) | Designs and implements production-grade RAG systems by chunking documents, generating embeddings, configuring vector stores, building hybrid search pipelines, applying reranking, and evaluating retrieval quality. |
 | [react-expert](react-expert/SKILL.md) | Use when building React 18+ applications in .jsx or .tsx files, Next.js App Router projects, or create-react-app setups. |
+| [react-native-expert](react-native-expert/SKILL.md) | Builds, optimizes, and debugs cross-platform mobile applications with React Native and Expo. |
 | [secure-code-guardian](secure-code-guardian/SKILL.md) | Use when implementing authentication/authorization, securing user input, or preventing OWASP Top 10 vulnerabilities — including custom security implementations such as hashing passwords with bcrypt/argon2, sanitizing... |
 | [security-reviewer](security-reviewer/SKILL.md) | Identifies security vulnerabilities, generates structured audit reports with severity ratings, and provides actionable remediation guidance. |
 | [spark-engineer](spark-engineer/SKILL.md) | Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed data processing pipelines, or big data workloads. |
 | [spec-miner](spec-miner/SKILL.md) | Reverse-engineering specialist that extracts specifications from existing codebases. |
 | [sql-pro](sql-pro/SKILL.md) | Optimizes SQL queries, designs database schemas, and troubleshoots performance issues. |
 | [sre-engineer](sre-engineer/SKILL.md) | Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and produces monitoring configurations and automation scripts for production systems. |
+| [swift-expert](swift-expert/SKILL.md) | Builds iOS/macOS/watchOS/tvOS applications, implements SwiftUI views and state management, designs protocol-oriented architectures, handles async/await concurrency, implements actors for thread safety, and debugs Swif... |
 | [terraform-engineer](terraform-engineer/SKILL.md) | Use when implementing infrastructure as code with Terraform across AWS, Azure, or GCP. |
 | [test-master](test-master/SKILL.md) | Generates test files, creates mocking strategies, analyzes code coverage, designs test architectures, and produces test plans and defect reports across functional, performance, and security testing disciplines. |
 | [the-fool](the-fool/SKILL.md) | Use when challenging ideas, plans, decisions, or proposals using structured critical reasoning. |

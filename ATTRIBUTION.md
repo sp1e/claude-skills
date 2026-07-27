@@ -1,17 +1,21 @@
 # Attribution
 
-## fullstack-dev-skills (40 skills)
+## fullstack-dev-skills (45 skills)
 
-The following 40 skills were added from
+The following 45 skills were added from
 [**Jeffallan/claude-skills**](https://github.com/Jeffallan/claude-skills)
 (the `fullstack-dev-skills` pack), licensed under the **MIT License**
 (© Jeffallan). The full upstream license text is in
 [`LICENSE-fullstack-dev-skills`](LICENSE-fullstack-dev-skills), and each skill's
 `SKILL.md` retains its original `license: MIT` and `author` frontmatter.
 
-Only the subset relevant to data/BI, Python, SQL/Databricks, React/TypeScript,
-MCP, Azure/DevOps, security, and testing was included (off-domain skills such as
-mobile, game, CMS/e-commerce, and non-React frontend frameworks were not).
+The core 40 cover data/BI, Python, SQL/Databricks, React/TypeScript, MCP,
+Azure/DevOps, security, and testing. The mobile and game skills were added
+afterwards. Still not included: CMS/e-commerce (`wordpress-pro`,
+`shopify-expert`, `laravel-specialist`), non-React frontend frameworks
+(`vue-expert`, `angular-architect`), and other-language backends
+(`rails-expert`, `spring-boot-engineer`, `php-pro`, `golang-pro`, `rust-engineer`,
+`cpp-pro`, `csharp-developer`, `java-architect`, …).
 
 **API & architecture:** api-designer, architecture-designer, microservices-architect, mcp-developer
 **Backend:** fastapi-expert
@@ -23,6 +27,8 @@ mobile, game, CMS/e-commerce, and non-React frontend frameworks were not).
 **Quality:** code-reviewer, code-documenter, debugging-wizard, test-master, playwright-expert
 **Security:** secure-code-guardian, security-reviewer, fullstack-guardian
 **Platform:** atlassian-mcp
+**Mobile:** react-native-expert, flutter-expert, swift-expert, kotlin-specialist
+**Game:** game-developer
 **Specialized & workflow:** legacy-modernizer, spec-miner, feature-forge, the-fool
 
 ## Data, cloud & infrastructure (18 skills)
