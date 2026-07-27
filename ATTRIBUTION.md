@@ -1,34 +1,26 @@
 # Attribution
 
-## fullstack-dev-skills (45 skills)
+## fullstack-dev-skills (66 skills)
 
-The following 45 skills were added from
+The complete set of 66 skills from
 [**Jeffallan/claude-skills**](https://github.com/Jeffallan/claude-skills)
 (the `fullstack-dev-skills` pack), licensed under the **MIT License**
 (© Jeffallan). The full upstream license text is in
 [`LICENSE-fullstack-dev-skills`](LICENSE-fullstack-dev-skills), and each skill's
 `SKILL.md` retains its original `license: MIT` and `author` frontmatter.
 
-The core 40 cover data/BI, Python, SQL/Databricks, React/TypeScript, MCP,
-Azure/DevOps, security, and testing. The mobile and game skills were added
-afterwards. Still not included: CMS/e-commerce (`wordpress-pro`,
-`shopify-expert`, `laravel-specialist`), non-React frontend frameworks
-(`vue-expert`, `angular-architect`), and other-language backends
-(`rails-expert`, `spring-boot-engineer`, `php-pro`, `golang-pro`, `rust-engineer`,
-`cpp-pro`, `csharp-developer`, `java-architect`, …).
-
-**API & architecture:** api-designer, architecture-designer, microservices-architect, mcp-developer
-**Backend:** fastapi-expert
+**API & architecture:** api-designer, architecture-designer, microservices-architect, mcp-developer, graphql-architect, websocket-engineer
+**Backend:** fastapi-expert, django-expert, nestjs-expert, rails-expert, laravel-specialist, spring-boot-engineer, dotnet-core-expert
 **Data & ML:** pandas-pro, spark-engineer, ml-pipeline, fine-tuning-expert, rag-architect, prompt-engineer
-**Frontend (React/TS):** react-expert, nextjs-developer, typescript-pro, javascript-pro
+**Frontend:** react-expert, nextjs-developer, typescript-pro, javascript-pro, vue-expert, vue-expert-js, angular-architect
 **Infrastructure:** cloud-architect, database-optimizer, kubernetes-specialist, postgres-pro, terraform-engineer
-**Languages:** python-pro, sql-pro
+**Languages:** python-pro, sql-pro, golang-pro, rust-engineer, cpp-pro, csharp-developer, java-architect, php-pro
 **DevOps & SRE:** devops-engineer, monitoring-expert, sre-engineer, chaos-engineer, cli-developer
 **Quality:** code-reviewer, code-documenter, debugging-wizard, test-master, playwright-expert
 **Security:** secure-code-guardian, security-reviewer, fullstack-guardian
-**Platform:** atlassian-mcp
+**Platform:** atlassian-mcp, salesforce-developer, shopify-expert, wordpress-pro
 **Mobile:** react-native-expert, flutter-expert, swift-expert, kotlin-specialist
-**Game:** game-developer
+**Game & embedded:** game-developer, embedded-systems
 **Specialized & workflow:** legacy-modernizer, spec-miner, feature-forge, the-fool
 
 ## Data, cloud & infrastructure (18 skills)
