@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **162 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **251 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,47 +19,134 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-162 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+251 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
-### Analysis, BI & general (35)
+### Analysis, BI & general (122)
 
 | Skill | Description |
 | --- | --- |
+| [a11y-audit](a11y-audit/SKILL.md) | This skill should be used when the user asks to "check accessibility", "audit WCAG compliance", "scan HTML for a11y issues", "check color contrast", or "find accessibility violations in web pages". |
 | [ab-test-analysis](ab-test-analysis/SKILL.md) | Rigorous A/B test statistical analysis. |
+| [agent-designer](agent-designer/SKILL.md) | Designs multi-agent system architectures with orchestration patterns, tool schemas, and performance evaluation. |
+| [agent-harness](agent-harness/SKILL.md) | Test and evaluation harness for AI agents — scenario suites, deterministic replay, regression diffing, cost and latency budgets. |
+| [agent-protocol](agent-protocol/SKILL.md) | Design AI agent communication protocols: MCP tool schemas, A2A, function calling, and inter- agent messaging. |
+| [agent-workflow-designer](agent-workflow-designer/SKILL.md) | Design multi-agent orchestration with workflow DAGs, routing, handoff protocols, and state management. |
+| [agenthub](agenthub/SKILL.md) | Multi-agent DAG orchestration for workflows where AI agents collaborate via dependency graphs, covering agent spawning, output merging, and quality evaluation. |
+| [agentic-evaluation-framework](agentic-evaluation-framework/SKILL.md) | This skill should be used when the user asks to "evaluate LLM output quality", "set up LLM-as-judge", "build an eval rubric", "compare model outputs pairwise", or "measure agent quality". |
+| [ai-security](ai-security/SKILL.md) | This skill should be used when the user asks to "scan AI systems for security threats", "check for prompt injection vulnerabilities", "assess model security posture", "detect data poisoning risks", or "audit AI/ML pip... |
 | [analysis-assumptions-log](analysis-assumptions-log/SKILL.md) | Track and document analytical assumptions and decisions. |
 | [analysis-documentation](analysis-documentation/SKILL.md) | Structured, reproducible analysis documentation. |
 | [analysis-planning](analysis-planning/SKILL.md) | Structure analysis approach before starting work. |
 | [analysis-qa-checklist](analysis-qa-checklist/SKILL.md) | Pre-delivery quality assurance for analysis work. |
 | [analysis-retrospective](analysis-retrospective/SKILL.md) | Post-analysis learning and process improvement. |
+| [api-design-reviewer](api-design-reviewer/SKILL.md) | Review REST API designs for quality, consistency, and breaking changes. |
+| [api-test-suite-builder](api-test-suite-builder/SKILL.md) | Generate API test suites from route definitions across frameworks: auth, input validation, contract, k6 load testing, mocking, and OpenAPI-driven generation. |
+| [aws-solution-architect](aws-solution-architect/SKILL.md) | Design AWS serverless architectures for startups with IaC. |
+| [batch-api-orchestrator](batch-api-orchestrator/SKILL.md) | This skill should be used when the user asks to "batch LLM requests", "should I use the batch API", "estimate batch vs realtime cost", "design a bulk LLM job", or "process thousands of prompts cheaply". |
+| [browser-automation](browser-automation/SKILL.md) | This skill should be used when the user asks to "build web automation scripts", "check browser automation for detection", "generate web scraping code", "create form filling automation", or "build anti-detection browse... |
 | [business-metrics-calculator](business-metrics-calculator/SKILL.md) | Standard business metric calculation with industry benchmarks. |
+| [changelog-generator](changelog-generator/SKILL.md) | Generate changelogs and release notes from Conventional Commits with semver bump detection, Keep a Changelog formatting, and monorepo scopes. |
+| [chaos-engineering](chaos-engineering/SKILL.md) | Chaos engineering: hypothesis-driven fault injection to surface weakness before users do. |
+| [ci-cd-pipeline-builder](ci-cd-pipeline-builder/SKILL.md) | Design and generate CI/CD pipelines from project stack signals across GitHub Actions, GitLab CI, CircleCI, and Buildkite. |
+| [claude-code-mastery](claude-code-mastery/SKILL.md) |  |
+| [cloud-security](cloud-security/SKILL.md) | Cloud posture security across AWS, Azure, and GCP — IAM least privilege, public exposure, encryption, logging coverage, landing-zone guardrails. |
+| [code-tour](code-tour/SKILL.md) | Build ordered, annotated tours of an unfamiliar codebase and keep the anchors from rotting. |
+| [codebase-onboarding](codebase-onboarding/SKILL.md) | Analyze a codebase and generate onboarding docs: architecture overviews, file maps, setup guides, runbooks, and debugging guides. |
+| [codex-cli-specialist](codex-cli-specialist/SKILL.md) | OpenAI Codex CLI and cross-platform skill authoring. |
 | [cohort-analysis](cohort-analysis/SKILL.md) | Time-based cohort analysis with retention and behaviour tracking. |
+| [computer-use-automation](computer-use-automation/SKILL.md) | This skill should be used when the user asks to "build a computer-use agent", "automate a GUI with an AI agent", "when to use computer use vs an API", "make browser automation reliable", or "design screenshot-driven a... |
+| [context-engine](context-engine/SKILL.md) | Context management engine for AI coding agents. |
 | [context-packager](context-packager/SKILL.md) | Efficiently package context for AI-assisted analysis. |
 | [dashboard-specification](dashboard-specification/SKILL.md) | Design specifications for effective dashboards. |
 | [data-catalog-entry](data-catalog-entry/SKILL.md) | Create standardized metadata for data assets. |
 | [data-narrative-builder](data-narrative-builder/SKILL.md) | Build compelling data-driven narratives. |
 | [data-quality-audit](data-quality-audit/SKILL.md) | Comprehensive data quality assessment against business rules, schema constraints, and freshness expectations. |
+| [data-quality-auditor](data-quality-auditor/SKILL.md) | Audit data quality across pipelines, warehouses, and stores. |
+| [database-designer](database-designer/SKILL.md) | Database design with schema analysis, index optimization, and migration generation for PostgreSQL, MySQL, MongoDB, and DynamoDB. |
+| [database-schema-designer](database-schema-designer/SKILL.md) | Design relational schemas from requirements with normalization, migrations, ERDs, RLS policies, and indexes for PostgreSQL, MySQL, and SQLite. |
+| [dependency-auditor](dependency-auditor/SKILL.md) | Scan project dependencies for vulnerabilities, license issues, and upgrade opportunities across Python, Node.js, Go, and Rust. |
+| [design-auditor](design-auditor/SKILL.md) | Audit UI/UX designs for quality, AI-generated slop, and accessibility. |
+| [devops-workflow-engineer](devops-workflow-engineer/SKILL.md) | Generate and optimize GitHub Actions CI/CD workflows. |
+| [doc-drift-detector](doc-drift-detector/SKILL.md) | Detect documentation drift against code changes, score staleness, validate API docs via AST parsing, and audit link integrity. |
+| [docker-development](docker-development/SKILL.md) | This skill should be used when the user asks to "analyze a Dockerfile", "optimize Docker layers", "validate docker-compose", "check container best practices", or "audit Docker configurations". |
+| [env-secrets-manager](env-secrets-manager/SKILL.md) | Environment and secrets management lifecycle: .env scaffolding, validation, leak detection, and rotation across Vault, AWS SSM, 1Password, and Doppler. |
 | [executive-summary-generator](executive-summary-generator/SKILL.md) | Create concise executive summaries from detailed analysis. |
+| [extended-thinking-architect](extended-thinking-architect/SKILL.md) | This skill should be used when the user asks to "decide reasoning effort", "set a thinking budget", "when to use extended thinking", "tune reasoning vs cost", or "should this task use a reasoning model". |
+| [feature-flags-architect](feature-flags-architect/SKILL.md) | Feature flag strategy, lifecycle, and operations. |
+| [focused-fix](focused-fix/SKILL.md) | This skill should be used when the user asks to "fix a bug with minimal changes", "analyze change scope for a bugfix", "find the minimal set of files to change", "do a focused bugfix", or "scope a minimal repair". |
 | [funnel-analysis](funnel-analysis/SKILL.md) | Conversion funnel analysis with drop-off investigation. |
+| [gcp-cloud-architect](gcp-cloud-architect/SKILL.md) | Design, review, and validate Google Cloud (GCP) architectures. |
+| [git-worktree-manager](git-worktree-manager/SKILL.md) | Manage parallel development with Git worktrees: creation with port allocation, environment sync, branch isolation, and cleanup. |
+| [google-workspace-cli](google-workspace-cli/SKILL.md) | This skill should be used when the user asks to "audit Google Workspace", "check GWS security settings", "set up Google Workspace authentication", "diagnose Workspace issues", or "review Google admin configurations". |
+| [helm-chart-builder](helm-chart-builder/SKILL.md) | This skill should be used when the user asks to "analyze Helm charts", "validate Helm values", "review chart structure", "check Kubernetes Helm templates", or "audit chart dependencies and configuration". |
 | [image-gen](image-gen/SKILL.md) | Generate images from a text prompt via Hugging Face. |
 | [impact-quantification](impact-quantification/SKILL.md) | Estimate and communicate business impact of insights. |
+| [incident-commander](incident-commander/SKILL.md) | Production incident response. |
 | [insight-synthesis](insight-synthesis/SKILL.md) | Transform data findings into compelling insights. |
+| [interview-system-designer](interview-system-designer/SKILL.md) | Design calibrated interview loops, competency-based question banks, and hiring calibration. |
+| [kubernetes-operator](kubernetes-operator/SKILL.md) | Design, build, and operate Kubernetes operators. |
+| [llm-cost-optimizer](llm-cost-optimizer/SKILL.md) | This skill should be used when the user asks to "estimate LLM costs", "count tokens in prompts", "optimize prompt token usage", "compare model pricing", or "reduce LLM API costs". |
+| [mcp-server-builder](mcp-server-builder/SKILL.md) | Build MCP (Model Context Protocol) servers with tool definitions, resource providers, prompt templates, and transports. |
 | [methodology-explainer](methodology-explainer/SKILL.md) | Explain analysis methodology to diverse audiences. |
 | [metric-reconciliation](metric-reconciliation/SKILL.md) | Cross-source metric validation and discrepancy investigation. |
+| [migration-architect](migration-architect/SKILL.md) | Plans zero-downtime migrations with compatibility validation, rollback strategies, and phased execution plans. |
+| [monorepo-navigator](monorepo-navigator/SKILL.md) | Manage and optimize monorepos with Turborepo, Nx, pnpm workspaces, and Changesets. |
+| [ms365-tenant-manager](ms365-tenant-manager/SKILL.md) | Microsoft 365 tenant administration for Global Administrators. |
+| [observability-designer](observability-designer/SKILL.md) | Design observability strategies: SLI/SLO frameworks, alerting, and dashboards. |
 | [peer-review-template](peer-review-template/SKILL.md) | Structured peer review for analytical work. |
+| [performance-profiler](performance-profiler/SKILL.md) | Performance profiling for Node.js, Python, and Go: CPU flamegraphs, memory leak detection, bundle analysis, query optimization, and k6 load testing. |
 | [planning-with-files](planning-with-files/SKILL.md) | Implements Manus-style file-based planning to organize and track progress on complex tasks. |
+| [playwright-pro](playwright-pro/SKILL.md) | End-to-end testing with Playwright: test generation, page objects, locator strategy, flaky- test diagnosis, visual regression, and CI integration. |
+| [pr-review-expert](pr-review-expert/SKILL.md) | Systematic PR review with blast-radius analysis, security scanning, and breaking-change and test-coverage deltas. |
 | [programmatic-eda](programmatic-eda/SKILL.md) | Systematic exploratory data analysis. |
+| [prompt-engineer-toolkit](prompt-engineer-toolkit/SKILL.md) | Prompt engineering frameworks for building, testing, versioning, and evaluating prompts: chain-of-thought, few-shot, regression testing, and rubrics. |
+| [prompt-governance](prompt-governance/SKILL.md) | This skill should be used when the user asks to "audit prompts for safety", "check prompts for injection vulnerabilities", "manage a prompt catalog", "version control prompts", or "review prompt quality and compliance". |
+| [qa-browser-automation](qa-browser-automation/SKILL.md) | Browser-based QA combining Chrome MCP control with Python analysis tools. |
 | [query-validation](query-validation/SKILL.md) | SQL query review for correctness, performance, and best practices. |
+| [red-team](red-team/SKILL.md) | This skill should be used when the user asks to "plan a red team engagement", "scope a penetration test", "design a security assessment methodology", "create rules of engagement", or "plan an adversary simulation". |
+| [release-manager](release-manager/SKILL.md) | Automates release management with changelog generation, semantic versioning, and release readiness checks. |
+| [release-orchestrator](release-orchestrator/SKILL.md) | Orchestrate end-to-end release pipelines. |
 | [root-cause-investigation](root-cause-investigation/SKILL.md) | Systematic investigation of metric changes and anomalies. |
+| [runbook-generator](runbook-generator/SKILL.md) | Generate operational runbooks from codebase analysis covering deployment, incident response, scaling, and monitoring, with copy-paste commands and rollback steps. |
+| [saas-scaffolder](saas-scaffolder/SKILL.md) | Generate SaaS boilerplate with auth, database schemas, Stripe billing, multi-tenancy, API routes, and dashboard UI on a Next.js/TypeScript/Tailwind stack. |
 | [schema-mapper](schema-mapper/SKILL.md) | Database schema understanding and relationship mapping. |
+| [secrets-vault-manager](secrets-vault-manager/SKILL.md) | This skill should be used when the user asks to "generate Vault configurations", "plan secret rotation", "analyze vault audit logs", "manage secrets lifecycle", or "set up HashiCorp Vault". |
 | [segmentation-analysis](segmentation-analysis/SKILL.md) | Customer/user segmentation with actionable insights. |
+| [self-improving-agent](self-improving-agent/SKILL.md) | Patterns for AI agents that learn from their own execution, detect failure modes, and improve autonomously. |
 | [semantic-model-builder](semantic-model-builder/SKILL.md) | Build structured semantic layer documentation for metrics, dimensions, and entities. |
+| [senior-architect](senior-architect/SKILL.md) | System architecture design and review. |
+| [senior-backend](senior-backend/SKILL.md) | Backend development with Node.js/Express/Fastify and PostgreSQL. |
+| [senior-cloud-architect](senior-cloud-architect/SKILL.md) |  |
+| [senior-computer-vision](senior-computer-vision/SKILL.md) | Computer vision engineering for object detection, segmentation, and visual AI, covering CNN and Vision Transformer architectures and ONNX/TensorRT deployment. |
+| [senior-data-engineer](senior-data-engineer/SKILL.md) | Data engineering for batch and streaming pipelines with Airflow, dbt, Spark, and Kafka. |
+| [senior-data-scientist](senior-data-scientist/SKILL.md) |  |
+| [senior-devops](senior-devops/SKILL.md) | DevOps for CI/CD, containers, Kubernetes, and Terraform. |
+| [senior-frontend](senior-frontend/SKILL.md) | Frontend development for React, Next.js, TypeScript, and Tailwind CSS. |
+| [senior-fullstack](senior-fullstack/SKILL.md) | Fullstack development toolkit with project scaffolding for Next.js/FastAPI/MERN/Django stacks and code quality analysis. |
+| [senior-ml-engineer](senior-ml-engineer/SKILL.md) | ML engineering skill for productionizing models, building MLOps pipelines, and integrating LLMs. |
+| [senior-mobile](senior-mobile/SKILL.md) |  |
+| [senior-prompt-engineer](senior-prompt-engineer/SKILL.md) | Prompt engineering and LLM evaluation. |
+| [senior-qa](senior-qa/SKILL.md) | Testing for React/Next.js with Jest, React Testing Library, and Playwright. |
+| [senior-secops](senior-secops/SKILL.md) | SecOps for application security, vulnerability management, compliance, and secure development. |
+| [senior-security](senior-security/SKILL.md) | STRIDE threat modeling, DREAD risk scoring, secret detection, and secure architecture design. |
+| [skill-security-auditor](skill-security-auditor/SKILL.md) | Security audit and vulnerability scanning for AI agent skills before install. |
+| [skill-tester](skill-tester/SKILL.md) | Validate and score Claude Code skill packages for quality, completeness, and best-practice compliance. |
+| [snowflake-development](snowflake-development/SKILL.md) | This skill should be used when the user asks to "optimize Snowflake queries", "analyze Snowflake SQL performance", "size Snowflake warehouses", "review Snowflake data models", or "troubleshoot Snowflake cost issues". |
+| [spec-driven-workflow](spec-driven-workflow/SKILL.md) | Run development from an executable specification with traceable requirement IDs and merge-time coverage gates. |
+| [sql-database-assistant](sql-database-assistant/SKILL.md) | This skill should be used when the user asks to "optimize SQL queries", "explore database schemas", "generate migration SQL", "analyze query performance", or "document database structure". |
 | [sql-to-business-logic](sql-to-business-logic/SKILL.md) | Translate SQL queries into plain language business logic. |
 | [stakeholder-requirements-gathering](stakeholder-requirements-gathering/SKILL.md) | Structured requirements elicitation for analysis requests. |
+| [stripe-integration-expert](stripe-integration-expert/SKILL.md) | Implement Stripe integrations for SaaS billing: subscriptions, checkout, proration, usage- based billing, idempotent webhooks, customer portal, dunning, and SCA. |
 | [sv3d](sv3d/SKILL.md) | Stable Video 3D (SV3D) — turn a SINGLE image of an object into an orbital novel-view VIDEO (image→video/3D). |
+| [tdd-guide](tdd-guide/SKILL.md) | Guide red-green-refactor TDD with test generation, coverage-gap analysis, and multi- framework support. |
+| [tech-debt-tracker](tech-debt-tracker/SKILL.md) | Scan codebases for technical debt with AST parsing, prioritize by impact, and generate trend dashboards. |
+| [tech-stack-evaluator](tech-stack-evaluator/SKILL.md) | Evaluate and compare technology stacks with TCO analysis, security assessment, and ecosystem health scoring. |
 | [technical-to-business-translator](technical-to-business-translator/SKILL.md) | Translate technical analysis into business language. |
+| [threat-detection](threat-detection/SKILL.md) | This skill should be used when the user asks to "analyze logs for threats", "detect suspicious activity", "scan for brute force attempts", "identify injection attacks", or "audit access patterns for anomalies". |
 | [time-series-analysis](time-series-analysis/SKILL.md) | Temporal pattern detection and forecasting. |
 | [visualization-builder](visualization-builder/SKILL.md) | Create effective, publication-ready data visualizations. |
 | [web-artifacts-builder](web-artifacts-builder/SKILL.md) | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). |
+| [write-a-skill](write-a-skill/SKILL.md) | Author, lint, and publish skill packages that satisfy the library authoring standard. |
 
 ### Power BI (3)
 
@@ -69,7 +156,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [pbi-requirements-gathering](pbi-requirements-gathering/SKILL.md) | [power-bi] Power BI Requirements Gathering — a structured, conversation-driven skill that captures everything needed before building a Power BI solution. |
 | [pbip-dependency-analyzer](pbip-dependency-analyzer/SKILL.md) | Power BI PBIP Dependency Analyzer. |
 
-### Data, cloud & infrastructure (18)
+### Data, cloud & infrastructure (20)
 
 > Curated from official vendor skill repos (Microsoft, ClickHouse, Neon, HashiCorp). See [ATTRIBUTION.md](ATTRIBUTION.md).
 
@@ -77,6 +164,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | --- | --- |
 | [azure-ai-ml-py](azure-ai-ml-py/SKILL.md) | Azure Machine Learning SDK v2 for Python. |
 | [azure-ai-projects-py](azure-ai-projects-py/SKILL.md) | Build AI applications using the Azure AI Projects Python SDK (azure-ai-projects). |
+| [azure-cloud-architect](azure-cloud-architect/SKILL.md) | Design, review, and validate Azure cloud architectures. |
 | [azure-identity-py](azure-identity-py/SKILL.md) | Azure Identity SDK for Python authentication with Microsoft Entra ID. |
 | [azure-keyvault-py](azure-keyvault-py/SKILL.md) | Azure Key Vault SDK for Python. |
 | [azure-mgmt-fabric-py](azure-mgmt-fabric-py/SKILL.md) | Azure Fabric Management SDK for Python. |
@@ -92,6 +180,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [fastapi-router-py](fastapi-router-py/SKILL.md) | Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. |
 | [neon-postgres](neon-postgres/SKILL.md) | Guides and best practices for working with Neon Serverless Postgres. |
 | [pydantic-models-py](pydantic-models-py/SKILL.md) | Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. |
+| [terraform-patterns](terraform-patterns/SKILL.md) | This skill should be used when the user asks to "analyze Terraform modules", "scan IaC for security issues", "review Terraform configurations", "check infrastructure code for misconfigurations", or "audit cloud resour... |
 | [terraform-style-guide](terraform-style-guide/SKILL.md) | Generate Terraform HCL code following HashiCorp's official style conventions and best practices. |
 
 ### Full-stack development (40)
