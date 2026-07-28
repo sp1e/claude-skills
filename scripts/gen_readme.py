@@ -26,6 +26,16 @@ FULLSTACK_MARKER = "github.com/jeffallan"
 DATA_INFRA_PREFIXES = ("azure-", "chdb", "clickhouse", "neon", "terraform", "tinybird")
 DATA_INFRA_EXTRA = {"fastapi-router-py", "pydantic-models-py"}
 
+# "Video & motion" = HyperFrames motion doctrine (heygen-com/hyperframes, Apache-2.0).
+VIDEO_MOTION = {
+    "captions-overlay",
+    "changelog-video",
+    "cut-the-curve",
+    "motion-doctrine",
+    "oversized-cursor",
+    "seam-craft",
+}
+
 
 def parse_frontmatter(text):
     m = re.match(r"^---\s*\n(.*?)\n---", text, re.S)
@@ -68,6 +78,8 @@ def classify(folder, frontmatter_text):
         return "GSD project workflow"
     if folder.startswith(DATA_INFRA_PREFIXES) or folder in DATA_INFRA_EXTRA:
         return "Data, cloud & infrastructure"
+    if folder in VIDEO_MOTION:
+        return "Video & motion"
     return "Analysis, BI & general"
 
 
@@ -77,6 +89,7 @@ def main():
         "Power BI": [],
         "Data, cloud & infrastructure": [],
         "Full-stack development": [],
+        "Video & motion": [],
         "GSD project workflow": [],
     }
     total = 0
