@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **277 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **283 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,7 +19,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-277 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+283 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
 ### Analysis, BI & general (122)
 
@@ -255,6 +255,17 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [vue-expert-js](vue-expert-js/SKILL.md) | Creates Vue 3 components, builds vanilla JS composables, configures Vite projects, and sets up routing and state management using JavaScript only — no TypeScript. |
 | [websocket-engineer](websocket-engineer/SKILL.md) | Use when building real-time communication systems with WebSockets or Socket.IO. |
 | [wordpress-pro](wordpress-pro/SKILL.md) | Develops custom WordPress themes and plugins, creates and registers Gutenberg blocks and block patterns, configures WooCommerce stores, implements WordPress REST API endpoints, applies security hardening (nonces, sani... |
+
+### Video & motion (6)
+
+| Skill | Description |
+| --- | --- |
+| [captions-overlay](captions-overlay/SKILL.md) | Overlay doctrine for the embedded-captions workflow — the caption MODEL (drop / rail / embed) and the rule that captions are an OVERLAY composited on top of the film, never a reserved bottom band you shift content up... |
+| [changelog-video](changelog-video/SKILL.md) | Turn a weekly changelog .md into a finished branded changelog video (square 1080, ~45-60s, Annie VO, animated brand background, mock-UI visualizations, lowkey captions). |
+| [cut-the-curve](cut-the-curve/SKILL.md) | The technique catalog: five velocity-matched SEAMS (zoom-through, INVERSE zoom-through, cut-the-curve, waterfall cut, rack-focus blur-cut) plus the two in-scene techniques — waterfall ENTRY (staggered arrival cascades... |
+| [motion-doctrine](motion-doctrine/SKILL.md) | GATEWAY — load FIRST before composing any HyperFrames animation or video. |
+| [oversized-cursor](oversized-cursor/SKILL.md) | House-style oversized macOS cursor technique for HyperFrames launch videos. |
+| [seam-craft](seam-craft/SKILL.md) | Render-correctness doctrine for scene-to-scene seams in HyperFrames launch videos — the prerequisites that make transitions composite correctly on the master timeline. |
 
 ### GSD project workflow (66)
 

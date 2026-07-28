@@ -41,6 +41,31 @@ license texts are in [`licenses/`](licenses/).
 > that repo has no license, so redistribution terms are unclear. Install locally if needed via
 > `npx skills add https://github.com/tinybirdco/tinybird-agent-skills --skill <name>`.
 
+## Video & motion (6 skills)
+
+The following 6 skills come from the `.claude/skills/` folder of
+[**heygen-com/hyperframes**](https://github.com/heygen-com/hyperframes)
+(© HeyGen), licensed under the **Apache License 2.0**. Full license text:
+[`licenses/hyperframes-APACHE-2.0.txt`](licenses/hyperframes-APACHE-2.0.txt).
+
+They are the motion-doctrine layer of HyperFrames (an HTML→MP4 renderer built for
+agents) and are *not* part of its Claude Code plugin bundle, which ships a separate
+set of 19 workflow skills. Load `motion-doctrine` first — it is the gateway that
+routes to the others.
+
+**Skills:** motion-doctrine (motion law / seam gate), cut-the-curve (velocity-matched seam catalog), seam-craft (render-correctness at scene seams), oversized-cursor (pointer-led motion), captions-overlay (caption overlay model), changelog-video (changelog → branded video workflow)
+
+> **`changelog-video` is missing its bundled assets — deliberately.** Upstream it ships
+> ~18 MB of brand binaries: two commercial retail typefaces (**TT Norms Pro** by TypeType,
+> **ABC Solar Display** by ABC Dinamo), plus HeyGen brand music and a background video.
+> The Apache-2.0 grant covers, per upstream `CREDITS.md`, "all code in this repository" —
+> fonts, music and video are not code, and no separate asset licence is published. Commercial
+> webfont licences are per-licensee and normally forbid redistribution, so those four files
+> were left out rather than mirrored publicly. All prose, the build spec, visualization
+> registry, caption script and HTML skeleton are present. See
+> [`changelog-video/ASSETS-OMITTED.md`](changelog-video/ASSETS-OMITTED.md) for how to fetch
+> them from upstream, where the licence to use them actually comes from.
+
 ## Engineering pack (89 skills) — ⚠️ MIT + Commons Clause, NOT open source
 
 The following 89 skills come from the `engineering/` folder of
