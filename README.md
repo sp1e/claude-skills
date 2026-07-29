@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **283 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **284 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,9 +19,9 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-283 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+284 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
-### Analysis, BI & general (122)
+### Analysis, BI & general (123)
 
 | Skill | Description |
 | --- | --- |
@@ -146,6 +146,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [time-series-analysis](time-series-analysis/SKILL.md) | Temporal pattern detection and forecasting. |
 | [visualization-builder](visualization-builder/SKILL.md) | Create effective, publication-ready data visualizations. |
 | [web-artifacts-builder](web-artifacts-builder/SKILL.md) | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). |
+| [web-ui-verification](web-ui-verification/SKILL.md) | This skill should be used when the user asks to "verify the UI works", "check if this is clickable", "the layout breaks", "hidden isn't hiding", "it still looks old after deploying", or when a UI "should work but does... |
 | [write-a-skill](write-a-skill/SKILL.md) | Author, lint, and publish skill packages that satisfy the library authoring standard. |
 
 ### Power BI (3)
