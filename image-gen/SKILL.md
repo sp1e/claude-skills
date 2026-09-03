@@ -1,6 +1,6 @@
 ---
 name: image-gen
-description: Generate images from a text prompt via Hugging Face. Use WHENEVER the user asks to create/generate/make/render an image, picture, illustration, artwork, logo, or visual from a description (e.g. "generate an image of...", "make a picture of...", "render...", "/image-gen"), AND whenever you yourself decide an image would help. ALWAYS asks which engine to use (krea-official, sdxl, qwen-image, flux.1-krea-dev) before generating. Requires the Hugging Face MCP server (authenticated) for the MCP engine and HF_TOKEN for the official gradio_client engines.
+description: Generate images from a text prompt via Hugging Face. Use WHENEVER the user asks to create/generate/make/render an image, picture, illustration, artwork, logo, or visual from a description (e.g. "generate an image of...", "make a picture of...", "render...", "/image-gen"), AND whenever you yourself decide an image would help. ALWAYS asks which engine to use (krea-official, sdxl, qwen-image, flux.1-krea-dev, higgsfield) before generating. Requires the Hugging Face MCP server (authenticated) for the MCP engine and HF_TOKEN for the official gradio_client engines; higgsfield additionally spends PAID credits and must be price-flagged before use.
 ---
 
 # image-gen
@@ -19,6 +19,7 @@ Present these four options every time:
 | `sdxl` | `generate_image.py` (gradio_client) → `hysts/SDXL` | **HF_TOKEN** | Stability **SDXL base 1.0 + refiner** (from Stability-AI/generative-models). Photoreal; may need a retry under ZeroGPU load (script auto-retries). |
 | `qwen-image` | `generate_image.py` (gradio_client) → `Qwen/Qwen-Image` | **HF_TOKEN** | Official Qwen-Image. Best at text-in-image (Space occasionally broken upstream). |
 | `flux.1-krea-dev` | MCP `dynamic_space` → `prithivMLmods/FLUX-REALISM` | none | Krea-dev via the authenticated MCP session; photoreal lean. No token needed. |
+| `higgsfield` | MCP `higgsfield` (OAuth) → 30+ models incl. Nano Banana Pro, Seedance, Kling, Flux, GPT Image 2 | OAuth | **COSTS REAL MONEY (credits, not quota).** The only non-ZeroGPU engine — immune to the HF quota wall. Also the only one that does **video** (up to 15 s) and **character training** (Soul ID). Up to 4K. |
 
 (`z-image-turbo` was removed from the roster per the user's preference — do not offer it.)
 
@@ -26,7 +27,7 @@ If you want, also ask for a resolution/aspect ratio in the same `AskUserQuestion
 
 ## Quota flag (state it before the first generation of a session)
 
-All engines run on Hugging Face **ZeroGPU**, which is quota-metered, not money-billed. Free tier = small daily allowance; PRO ≈ 25× more. When quota is spent you get a "quota exceeded / GPU busy" error — not a charge. The `flux.1-krea-dev` MCP engine spends the authenticated session's quota; the two official (script) engines spend the `HF_TOKEN` owner's quota.
+The four HF engines run on Hugging Face **ZeroGPU**, which is quota-metered, not money-billed. **`higgsfield` is the exception: it burns purchased credits — real money.** Say the credit cost out loud and get an explicit go-ahead before the first higgsfield generation of a session; never fall back to it silently when an HF engine fails. Free tier = small daily allowance; PRO ≈ 25× more. When quota is spent you get a "quota exceeded / GPU busy" error — not a charge. The `flux.1-krea-dev` MCP engine spends the authenticated session's quota; the two official (script) engines spend the `HF_TOKEN` owner's quota.
 
 ## Procedure
 
@@ -40,6 +41,9 @@ All engines run on Hugging Face **ZeroGPU**, which is quota-metered, not money-b
 > `negative_prompt` MUST be present even though it's marked optional, or the call errors.
 
 The MCP route (`flux.1-krea-dev`) returns a Gradio file **URL** that is **ephemeral** (lives on the Space replica's `/tmp/gradio/`). You MUST download it immediately — see step 2.
+
+**MCP route — `higgsfield` (PAID):** the `higgsfield` MCP server (`https://mcp.higgsfield.ai/mcp`, OAuth). State the credit cost and get an explicit yes FIRST. Its tools cover text→image (up to 4K), image→video (up to 15 s), Soul ID character training, and generation history. Discover the exact tool names with `ListMcpResourcesTool` / the live tool list rather than guessing — they are not hardcoded here because the roster changes.
+> Free tier = watermarked output, no monthly credit allowance, 1 image / 1 video at a time. Subscription credits **expire at the end of each billing cycle with no rollover**, and credit packs require an active subscription — so do not stockpile.
 
 **gradio_client route — `krea-official` / `sdxl` / `qwen-image`:** run the script with the venv Python (PowerShell):
 ```powershell
@@ -80,4 +84,4 @@ Then set a Read token: `setx HF_TOKEN "hf_..."` and restart the app so child pro
 ## Additional engines researched (2026-06-24) — addable when needed
 - **More img2img/edit (HF, share the same ZeroGPU quota):** `linoyts/Qwen-Image-Edit-2511-Fast` (4-step; input is a *gallery list* `[{image:handle_file(p),caption:None}]`, tiny 256 default dims — must override), `prithivMLmods/FireRed-Image-Edit-1.0-Fast` (input is *base64-JSON* string — awkward). Kontext remains primary (cleanest single-image API).
 - **Upscale/restore (HF):** `fffiloni/PASD` (`/super_resolve_image`, filepath in, `upscale` factor), `leonelhs/superface` (`/predict`, face restore — dead simple), `prithivMLmods/PiD-Image-Upscaler`. Wired into upscale.py (pasd, superface).
-- **Beating the ZeroGPU quota wall** needs NON-HF GPUs: HF PRO (same account, $9/mo, 40min/day), RunComfy (CLI+token+credits — NOT installed here), or Replicate/fal.ai/Stability API (need keys — none set here). Adding more HF Spaces does NOT help; they share sipen's pool.
+- **Beating the ZeroGPU quota wall** needs NON-HF GPUs. As of 2026-09-03 the wired-up option is **`higgsfield`** (OAuth MCP, paid credits) — see the engine table. Other candidates: HF PRO (same account, $9/mo, 40min/day), RunComfy (CLI+token+credits — NOT installed here), or Replicate/fal.ai/Stability API (need keys — none set here). Adding more HF Spaces does NOT help; they share sipen's pool.
