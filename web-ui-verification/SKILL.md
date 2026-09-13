@@ -3,11 +3,12 @@ name: web-ui-verification
 description: >
   This skill should be used when the user asks to "verify the UI works", "check
   if this is clickable", "the layout breaks", "hidden isn't hiding", "it still
-  looks old after deploying", or when a UI "should work but doesn't". Covers why
-  el.click() in a test proves nothing about whether a user can click, a
-  reachability probe that catches invisible overlays, the bug class where author
-  CSS silently defeats [hidden] and disabled, and the four ways a measuring
-  instrument lies to you.
+  looks old after deploying", "it says it's loading but nothing happens", or when
+  a UI "should work but doesn't". Covers why el.click() in a test proves nothing
+  about whether a user can click, a reachability probe that catches invisible
+  overlays, the bug class where author CSS silently defeats [hidden] and disabled,
+  reading the rendered text to tell which code path actually ran, and the four
+  ways a measuring instrument lies to you.
 ---
 
 # Verifying a web UI
@@ -53,6 +54,19 @@ One line fixes it, and immunises everything current and future:
 ```css
 [hidden] { display: none !important; }
 ```
+
+**Fix the class, not the instance.** This bug shipped *twice* in one repo: the guard
+was added to the single stylesheet where it first bit, never generalised, and a
+second page shipped the identical defect months later. One line finds every gap:
+
+```bash
+for f in $(git ls-files '*.css'); do
+  grep -q '\[hidden\]' "$f" || echo "unguarded: $f"
+done
+```
+
+That found 1 of 6 stylesheets guarded — the other 5 served pages putting `hidden`
+on 37 elements. A fix applied only where the symptom appeared is half a fix.
 
 Same family, worth hunting for in any UI:
 
@@ -143,3 +157,24 @@ and confirm it fails. Two of these controls were themselves wrong — one mutate
 different CSS rule than intended, because `String.replace` takes the **first**
 match. And put the offender's name in the failure message; an assertion that says
 "something is wrong" forces the next person to re-derive the list by hand.
+
+## Rule 6 — the rendered text tells you which code path ran
+
+Before opening a debugger, compare the text on screen against what each code path
+would have produced.
+
+A progress bar read `Uploading…` on an idle page. The upload handler sets
+`` `Uploading ${file.name}…` ``. The missing filename proved the handler had never
+run — so the visible element could only be the static markup default, which meant
+the bug was CSS defeating `[hidden]`, not the upload. Diagnosed from a screenshot,
+before a browser was opened or a request was traced.
+
+The general form: **a static default and a populated value are different strings,
+and the difference is free evidence about which branch executed.** It also cuts the
+other way — a placeholder indistinguishable from its populated state destroys the
+signal. Reason enough to make empty, loading and error states say something the
+populated state never would.
+
+Corroborate before acting: here the database had zero rows for the feature, which
+confirmed no job had ever been created and ruled out "the upload worked, the list
+failed to render."

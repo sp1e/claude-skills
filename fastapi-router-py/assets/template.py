@@ -2,6 +2,11 @@
 {{ResourceName}} Router
 
 Handles CRUD operations for {{resource_name}} resources.
+
+Template placeholders to replace:
+- {{ResourceName}} (PascalCase)
+- {{resource_name}} (snake_case)
+- {{resource_plural}} (plural snake_case)
 """
 
 from typing import Optional

@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **284 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **288 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,9 +19,9 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-284 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+288 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
-### Analysis, BI & general (123)
+### Analysis, BI & general (127)
 
 | Skill | Description |
 | --- | --- |
@@ -47,6 +47,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [business-metrics-calculator](business-metrics-calculator/SKILL.md) | Standard business metric calculation with industry benchmarks. |
 | [changelog-generator](changelog-generator/SKILL.md) | Generate changelogs and release notes from Conventional Commits with semver bump detection, Keep a Changelog formatting, and monorepo scopes. |
 | [chaos-engineering](chaos-engineering/SKILL.md) | Chaos engineering: hypothesis-driven fault injection to surface weakness before users do. |
+| [chat-attachment-is-not-a-file](chat-attachment-is-not-a-file/SKILL.md) | Use when a task must read, edit, upscale, composite or train on an image or document the user pasted into chat — attachments are visible to the model but have no path on disk, so every file-consuming tool is blocked u... |
 | [ci-cd-pipeline-builder](ci-cd-pipeline-builder/SKILL.md) | Design and generate CI/CD pipelines from project stack signals across GitHub Actions, GitLab CI, CircleCI, and Buildkite. |
 | [claude-code-mastery](claude-code-mastery/SKILL.md) |  |
 | [cloud-security](cloud-security/SKILL.md) | Cloud posture security across AWS, Azure, and GCP — IAM least privilege, public exposure, encryption, logging coverage, landing-zone guardrails. |
@@ -72,10 +73,12 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [env-secrets-manager](env-secrets-manager/SKILL.md) | Environment and secrets management lifecycle: .env scaffolding, validation, leak detection, and rotation across Vault, AWS SSM, 1Password, and Doppler. |
 | [executive-summary-generator](executive-summary-generator/SKILL.md) | Create concise executive summaries from detailed analysis. |
 | [extended-thinking-architect](extended-thinking-architect/SKILL.md) | This skill should be used when the user asks to "decide reasoning effort", "set a thinking budget", "when to use extended thinking", "tune reasoning vs cost", or "should this task use a reasoning model". |
+| [face-model-training-vs-img2img](face-model-training-vs-img2img/SKILL.md) | Use when someone asks to train the assistant on a person's face, teach an image model a likeness, or wants portraits of a specific real person — decides between LoRA fine-tuning and per-photo img2img by dataset size,... |
 | [feature-flags-architect](feature-flags-architect/SKILL.md) | Feature flag strategy, lifecycle, and operations. |
 | [focused-fix](focused-fix/SKILL.md) | This skill should be used when the user asks to "fix a bug with minimal changes", "analyze change scope for a bugfix", "find the minimal set of files to change", "do a focused bugfix", or "scope a minimal repair". |
 | [funnel-analysis](funnel-analysis/SKILL.md) | Conversion funnel analysis with drop-off investigation. |
 | [gcp-cloud-architect](gcp-cloud-architect/SKILL.md) | Design, review, and validate Google Cloud (GCP) architectures. |
+| [generative-edit-identity-drift](generative-edit-identity-drift/SKILL.md) | Use when an AI image edit or upscale must preserve a real person's or object's identity — photo restoration, face sharpening, inserting one image into another, or any img2img restyle where the subject must still be re... |
 | [git-worktree-manager](git-worktree-manager/SKILL.md) | Manage parallel development with Git worktrees: creation with port allocation, environment sync, branch isolation, and cleanup. |
 | [google-workspace-cli](google-workspace-cli/SKILL.md) | This skill should be used when the user asks to "audit Google Workspace", "check GWS security settings", "set up Google Workspace authentication", "diagnose Workspace issues", or "review Google admin configurations". |
 | [helm-chart-builder](helm-chart-builder/SKILL.md) | This skill should be used when the user asks to "analyze Helm charts", "validate Helm values", "review chart structure", "check Kubernetes Helm templates", or "audit chart dependencies and configuration". |
@@ -146,8 +149,9 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [time-series-analysis](time-series-analysis/SKILL.md) | Temporal pattern detection and forecasting. |
 | [visualization-builder](visualization-builder/SKILL.md) | Create effective, publication-ready data visualizations. |
 | [web-artifacts-builder](web-artifacts-builder/SKILL.md) | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). |
-| [web-ui-verification](web-ui-verification/SKILL.md) | This skill should be used when the user asks to "verify the UI works", "check if this is clickable", "the layout breaks", "hidden isn't hiding", "it still looks old after deploying", or when a UI "should work but does... |
+| [web-ui-verification](web-ui-verification/SKILL.md) | This skill should be used when the user asks to "verify the UI works", "check if this is clickable", "the layout breaks", "hidden isn't hiding", "it still looks old after deploying", "it says it's loading but nothing... |
 | [write-a-skill](write-a-skill/SKILL.md) | Author, lint, and publish skill packages that satisfy the library authoring standard. |
+| [zerogpu-failure-class-triage](zerogpu-failure-class-triage/SKILL.md) | Use when a Hugging Face Space call fails with a GPU-sounding error — three classes look alike but need opposite responses: transient queue (retry works), account quota exhausted (retrying cannot help), and Space has n... |
 
 ### Power BI (3)
 
@@ -179,7 +183,7 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [clickhouse-architecture-advisor](clickhouse-architecture-advisor/SKILL.md) | MUST USE when designing ClickHouse architectures, selecting between ingestion or modeling patterns, or translating best practices into workload-specific system designs. |
 | [clickhouse-best-practices](clickhouse-best-practices/SKILL.md) | MUST USE when reviewing ClickHouse schemas, queries, or configurations. |
 | [fastapi-router-py](fastapi-router-py/SKILL.md) | Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. |
-| [neon-postgres](neon-postgres/SKILL.md) | Guides and best practices for working with Neon Serverless Postgres. |
+| [neon-postgres](neon-postgres/SKILL.md) | Guides and best practices for working with Lakebase Postgres, the database behind Neon. |
 | [pydantic-models-py](pydantic-models-py/SKILL.md) | Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. |
 | [terraform-patterns](terraform-patterns/SKILL.md) | This skill should be used when the user asks to "analyze Terraform modules", "scan IaC for security issues", "review Terraform configurations", "check infrastructure code for misconfigurations", or "audit cloud resour... |
 | [terraform-style-guide](terraform-style-guide/SKILL.md) | Generate Terraform HCL code following HashiCorp's official style conventions and best practices. |

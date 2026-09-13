@@ -44,7 +44,12 @@ async def list_items() -> list[Item]:
 
 ```python
 @router.post("/items", status_code=status.HTTP_201_CREATED)
+async def create_item(item: ItemCreate) -> Item:
+  ...
+
 @router.delete("/items/{id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_item(id: str) -> None:
+  ...
 ```
 
 ## Integration Steps
@@ -57,5 +62,11 @@ async def list_items() -> list[Item]:
 
 ## Best Practices
 
-1. **Pick `def` or `async def` per endpoint based on whether you call async I/O;** do not mix sync and async blocking calls in one handler.
+1. **Pick `def` or `async def` per endpoint based on whether you call async I/O; do not call blocking I/O from an `async def` handler.**
 2. **Manage long-lived resources (DB pools, HTTP clients) in `lifespan` and inject via `Depends`;** use `with`/`async with` for per-request resources.
+
+## Reference Files
+
+| File | Contents |
+|------|----------|
+| [references/capabilities.md](references/capabilities.md) | Additional non-hero capabilities, operation-group coverage, and production checklists. |

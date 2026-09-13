@@ -30,19 +30,23 @@ Copy the template from [assets/template.py](assets/template.py) and replace plac
 ## camelCase Aliases
 
 ```python
+from datetime import datetime
+
+from pydantic import BaseModel, ConfigDict, Field
+
 class MyModel(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
     workspace_id: str = Field(..., alias="workspaceId")
     created_at: datetime = Field(..., alias="createdAt")
-    
-    class Config:
-        populate_by_name = True  # Accept both snake_case and camelCase
 ```
 
 ## Optional Update Fields
 
 ```python
 class MyUpdate(BaseModel):
-    """All fields optional for PATCH requests."""
+    model_config = ConfigDict(populate_by_name=True)
+
     name: Optional[str] = Field(None, min_length=1)
     description: Optional[str] = None
 ```
@@ -51,7 +55,6 @@ class MyUpdate(BaseModel):
 
 ```python
 class MyInDB(MyResponse):
-    """Adds doc_type for Cosmos DB queries."""
     doc_type: str = "my_resource"
 ```
 
@@ -60,3 +63,9 @@ class MyInDB(MyResponse):
 1. Create models in `src/backend/app/models/`
 2. Export from `src/backend/app/models/__init__.py`
 3. Add corresponding TypeScript types
+
+## Reference Files
+
+| File | Contents |
+|------|----------|
+| [references/capabilities.md](references/capabilities.md) | Additional non-hero capabilities, operation-group coverage, and production checklists. |
