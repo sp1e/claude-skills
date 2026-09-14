@@ -1,6 +1,15 @@
 ---
 name: claude-code-mastery
-description: 
+description: >-
+  Använd vid arbete med Claude Codes egen konfiguration: skriva eller optimera en CLAUDE.md,
+  skapa en ny skill, definiera en subagent med scopade allowed-tools, koppla in hooks
+  (PreToolUse/PostToolUse/Stop i .claude/settings.json), eller mäta och minska hur mycket av
+  kontextfönstret ett projekt äter. Trigga på "CLAUDE.md", "skriv en skill", "skill-frontmatter",
+  "subagent", "allowed-tools", "hook", "settings.json", "kontextbudget", "token-budget",
+  "för många skills", "slash-kommando", "permission mode", "MCP-server", "worktree". Innehåller
+  tre skript: skill_scaffolder.py (nytt skill-paket), claudemd_optimizer.py (granska/komprimera
+  en CLAUDE.md) och context_analyzer.py (uppskatta kontextförbrukning per projekt), samt
+  checklistor för vad som måste klarläggas innan något scaffoldas.
 license: MIT
 metadata:
   version: 1.1.0
