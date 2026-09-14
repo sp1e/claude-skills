@@ -1,6 +1,12 @@
 ---
 name: sv3d
-description: Stable Video 3D (SV3D) — turn a SINGLE image of an object into an orbital novel-view VIDEO (image→video/3D). Use when the user wants to "orbit", "spin", "rotate", "see all sides of", or make a 360°/turntable video from an object image, or mentions SV3D / Stable Video 3D / stabilityai/sv3d. This is image→video, NOT text→image (for text→image use the image-gen skill). Runs in the cloud via a hosted Space and needs HF_TOKEN. NOTE: requires a GPU-backed SV3D Space — see the blocker below.
+description: >-
+  Stable Video 3D (SV3D) — turn a SINGLE image of an object into an orbital novel-view VIDEO
+  (image→video/3D). Use when the user wants to "orbit", "spin", "rotate", "see all sides of", or
+  make a 360°/turntable video from an object image, or mentions SV3D / Stable Video 3D /
+  stabilityai/sv3d. This is image→video, NOT text→image (for text→image use the image-gen skill).
+  Runs in the cloud via a hosted Space and needs HF_TOKEN. NOTE: requires a GPU-backed SV3D Space
+  — see the blocker below.
 ---
 
 # sv3d
