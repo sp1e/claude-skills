@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **249 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **253 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,9 +19,9 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-249 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+253 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
-### Analysis, BI & general (121)
+### Analysis, BI & general (125)
 
 | Skill | Description |
 | --- | --- |
@@ -75,9 +75,11 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [feature-flags-architect](feature-flags-architect/SKILL.md) | Feature flag strategy, lifecycle, and operations. |
 | [focused-fix](focused-fix/SKILL.md) | This skill should be used when the user asks to "fix a bug with minimal changes", "analyze change scope for a bugfix", "find the minimal set of files to change", "do a focused bugfix", or "scope a minimal repair". |
 | [funnel-analysis](funnel-analysis/SKILL.md) | Conversion funnel analysis with drop-off investigation. |
+| [gate-must-derive-its-criterion](gate-must-derive-its-criterion/SKILL.md) | Use when writing or reviewing a check that verifies another mechanism — a CI gate, a contract check, a lint rule, a guard over a build or sync script, a structural assertion. |
 | [git-worktree-manager](git-worktree-manager/SKILL.md) | Manage parallel development with Git worktrees: creation with port allocation, environment sync, branch isolation, and cleanup. |
 | [google-workspace-cli](google-workspace-cli/SKILL.md) | This skill should be used when the user asks to "audit Google Workspace", "check GWS security settings", "set up Google Workspace authentication", "diagnose Workspace issues", or "review Google admin configurations". |
 | [helm-chart-builder](helm-chart-builder/SKILL.md) | This skill should be used when the user asks to "analyze Helm charts", "validate Helm values", "review chart structure", "check Kubernetes Helm templates", or "audit chart dependencies and configuration". |
+| [identity-is-not-validation](identity-is-not-validation/SKILL.md) | Use when a cross-check reproduces a figure to near-zero deviation, when a ratio between two columns is constant across every period, or before subtracting one aggregate measure from another that looks like its superse... |
 | [image-gen](image-gen/SKILL.md) | Generate images from a text prompt via Hugging Face. |
 | [impact-quantification](impact-quantification/SKILL.md) | Estimate and communicate business impact of insights. |
 | [incident-commander](incident-commander/SKILL.md) | Production incident response. |
@@ -128,9 +130,11 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [senior-qa](senior-qa/SKILL.md) | Testing for React/Next.js with Jest, React Testing Library, and Playwright. |
 | [senior-secops](senior-secops/SKILL.md) | SecOps for application security, vulnerability management, compliance, and secure development. |
 | [senior-security](senior-security/SKILL.md) | STRIDE threat modeling, DREAD risk scoring, secret detection, and secure architecture design. |
+| [serializer-roundtrip-rewrites-unrelated-values](serializer-roundtrip-rewrites-unrelated-values/SKILL.md) | Use when changing one value inside a structured file that someone else's tool owns — JSON, YAML, XML, TOML — parse-modify-serialize silently rewrites values you never touched. |
 | [skill-security-auditor](skill-security-auditor/SKILL.md) | Security audit and vulnerability scanning for AI agent skills before install. |
 | [skill-tester](skill-tester/SKILL.md) | Validate and score Claude Code skill packages for quality, completeness, and best-practice compliance. |
 | [spec-driven-workflow](spec-driven-workflow/SKILL.md) | Run development from an executable specification with traceable requirement IDs and merge-time coverage gates. |
+| [spot-check-is-not-full-verification](spot-check-is-not-full-verification/SKILL.md) | Use when about to claim two artifacts are equivalent or that something doesn't exist, based on checking only the parts expected to matter — before asserting it, enumerate the full set the claim covers and verify every... |
 | [sql-database-assistant](sql-database-assistant/SKILL.md) | This skill should be used when the user asks to "optimize SQL queries", "explore database schemas", "generate migration SQL", "analyze query performance", or "document database structure". |
 | [sql-to-business-logic](sql-to-business-logic/SKILL.md) | Translate SQL queries into plain language business logic. |
 | [stakeholder-requirements-gathering](stakeholder-requirements-gathering/SKILL.md) | Structured requirements elicitation for analysis requests. |
