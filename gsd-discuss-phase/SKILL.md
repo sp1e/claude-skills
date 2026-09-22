@@ -1,5 +1,6 @@
 ---
 name: gsd-discuss-phase
+disable-model-invocation: true
 description: "Gather phase context through adaptive questioning before planning."
 argument-hint: "<phase> [--all] [--auto] [--chain] [--batch] [--analyze] [--text] [--power] [--assumptions]"
 allowed-tools:

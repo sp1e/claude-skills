@@ -1,5 +1,6 @@
 ---
 name: gsd-ai-integration-phase
+disable-model-invocation: true
 description: "Generate an AI-SPEC.md design contract for phases that involve building AI systems."
 argument-hint: "[phase number]"
 allowed-tools:

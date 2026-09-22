@@ -1,6 +1,8 @@
 ---
 name: chat-attachment-is-not-a-file
-description: "Use when a task must read, edit, upscale, composite or train on an image or document the user pasted into chat — attachments are visible to the model but have no path on disk, so every file-consuming tool is blocked until the user saves them. Also covers verifying which saved file is actually which."
+description: >-
+  Use when a task must read, edit, upscale, composite or train on an image or document the
+  user pasted into chat.
 metadata:
   origin: auto-extracted
 ---

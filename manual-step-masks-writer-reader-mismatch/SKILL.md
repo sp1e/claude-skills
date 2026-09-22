@@ -1,6 +1,8 @@
 ---
 name: manual-step-masks-writer-reader-mismatch
-description: "Use when a tool is about to read a file its own pipeline produced, or when a script that has worked for months suddenly fails on data nobody changed — an unlogged manual step may have been repairing the output all along, and its absence exposes a writer/reader mismatch that was always there."
+description: >-
+  Use when a tool is about to read a file its own pipeline produced, or when a script that has
+  worked for months suddenly fails on data nobody changed.
 metadata:
   origin: auto-extracted
 ---

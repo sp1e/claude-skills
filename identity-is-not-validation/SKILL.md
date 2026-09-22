@@ -1,6 +1,8 @@
 ---
 name: identity-is-not-validation
-description: "Use when a cross-check reproduces a figure to near-zero deviation, when a ratio between two columns is constant across every period, or before subtracting one aggregate measure from another that looks like its superset — all three are algebraic identities masquerading as independent evidence, and each one has shipped a false claim"
+description: >-
+  Use when a cross-check reproduces a figure to near-zero deviation, when a ratio between two
+  columns is constant across every period.
 metadata:
   origin: auto-extracted
 ---

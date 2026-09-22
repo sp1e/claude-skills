@@ -1,14 +1,10 @@
 ---
 name: web-ui-verification
-description: >
-  This skill should be used when the user asks to "verify the UI works", "check
-  if this is clickable", "the layout breaks", "hidden isn't hiding", "it still
-  looks old after deploying", "it says it's loading but nothing happens", or when
-  a UI "should work but doesn't". Covers why el.click() in a test proves nothing
-  about whether a user can click, a reachability probe that catches invisible
-  overlays, the bug class where author CSS silently defeats [hidden] and disabled,
-  reading the rendered text to tell which code path actually ran, and the four
-  ways a measuring instrument lies to you.
+description: >-
+  This skill should be used when the user asks to "verify the UI works", "check if this is
+  clickable", "the layout breaks", "hidden isn't hiding", "it still looks old after
+  deploying", "it says it's loading but nothing happens", or when a UI "should work but
+  doesn't".
 ---
 
 # Verifying a web UI

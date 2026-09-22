@@ -1,6 +1,10 @@
 ---
 name: pbip-dependency-analyzer
-description: "Power BI PBIP Dependency Analyzer. Analyzes all Power BI Project (.pbip) files, TMDL exports, and semantic model definitions to map dependencies between measures, columns, tables, M/Power Query, relationships, and report visuals. Use this skill EVERY TIME the user asks to: find unused measures or columns, analyze dependencies, clean up a data model, check what would break if something is deleted, perform impact analysis, identify orphaned objects, audit model quality, or asks 'what can I delete'. Also trigger when the user uploads .pbip files, model.bim files, TMDL exports, or report.json files and wants to understand their structure or dependencies. Trigger phrases include: 'analyze dependencies', 'find unused', 'what can I delete', 'clean up model', 'impact analysis', 'dependency check', 'unused measures', 'unused columns', 'orphaned objects', 'model audit', 'PBIP analysis'."
+description: >-
+  Power BI PBIP Dependency Analyzer. Use this skill EVERY TIME the user asks to: find unused
+  measures or columns, analyze dependencies, clean up a data model, check what would break if
+  something is deleted, perform impact analysis, identify orphaned objects, audit model
+  quality, or asks 'what can I delete'.
 ---
 
 # Power BI PBIP Dependency Analyzer

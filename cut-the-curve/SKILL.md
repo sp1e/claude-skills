@@ -1,13 +1,9 @@
 ---
 name: cut-the-curve
 description: >-
-  Teknikkatalogen: fem velocity-matchade SEAMS (zoom-through, inverse zoom-through, cut-the-curve,
-  waterfall cut, rack-focus blur-cut) plus waterfall ENTRY och nudge-kurvan. Täcker
-  partial-travel-matchning (~12 % av bilden) via speglade power4-eases, Z-skalteckenregeln,
-  storleksskalad blur, ord-för-ord-staggrade klipp, kadens efter elementvikt och
-  10/65/25-slide-ratiot. Läs före varje transition, text-beat-övergång, kinetisk textentré eller
-  gruppomflyttning. [zoom, rack-focus, stagger, cascade, kinetic-text, easing, motion-graphics,
-  transition]
+  Teknikkatalogen: fem velocity-matchade SEAMS (zoom-through, inverse zoom-through,
+  cut-the-curve, waterfall cut, rack-focus blur-cut) plus waterfall ENTRY och nudge-kurvan.
+  Läs före varje transition, text-beat-övergång, kinetisk textentré eller gruppomflyttning.
 ---
 
 # Cut the Curve — the technique catalog

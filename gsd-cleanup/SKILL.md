@@ -1,5 +1,6 @@
 ---
 name: gsd-cleanup
+disable-model-invocation: true
 description: "Archive accumulated phase directories from completed milestones"
 allowed-tools:
   - Read

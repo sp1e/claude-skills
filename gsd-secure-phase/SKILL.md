@@ -1,5 +1,6 @@
 ---
 name: gsd-secure-phase
+disable-model-invocation: true
 description: "Retroactively verify threat mitigations for a completed phase"
 argument-hint: "[phase number]"
 allowed-tools:

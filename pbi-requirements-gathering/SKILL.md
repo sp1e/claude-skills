@@ -1,7 +1,8 @@
 ---
 name: pbi-requirements-gathering
-description: >
-  [power-bi] Power BI Requirements Gathering — a structured, conversation-driven skill that captures everything needed before building a Power BI solution. Use this skill EVERY TIME someone is starting a new Power BI project, needs to gather requirements from a client or stakeholder, wants to avoid common project failure points, or is scoping a Power BI engagement. Also trigger when the user mentions 'requirements', 'kickoff', 'scoping', 'what questions should I ask', 'project planning', 'client brief', 'starting a Power BI project', 'discovery session', or 'pre-sales assessment'. Guides Claude through 10 phases: business context, data sources, data modelling, performance, admin infrastructure, visuals, security, integration, governance, and change management. Generates a portable markdown file so sessions can be resumed and updated over time. Built by Lukas Reese.
+description: >-
+  [power-bi] Power BI Requirements Gathering — a structured, conversation-driven skill that
+  captures everything needed before building a Power BI solution.
 ---
 
 # Power BI Requirements Gathering — v1.1

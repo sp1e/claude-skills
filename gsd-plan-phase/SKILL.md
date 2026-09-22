@@ -1,5 +1,6 @@
 ---
 name: gsd-plan-phase
+disable-model-invocation: true
 description: "Create detailed phase plan (PLAN.md) with verification loop"
 argument-hint: "[phase] [--auto] [--research] [--skip-research] [--research-phase <N>] [--view] [--gaps] [--skip-verify] [--prd <file>] [--reviews] [--text] [--tdd] [--mvp]"
 allowed-tools:

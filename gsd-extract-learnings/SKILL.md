@@ -1,5 +1,6 @@
 ---
 name: gsd-extract-learnings
+disable-model-invocation: true
 description: "Extract decisions, lessons, patterns, and surprises from completed phase artifacts"
 argument-hint: "<phase-number>"
 allowed-tools:

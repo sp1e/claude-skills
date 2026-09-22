@@ -1,5 +1,6 @@
 ---
 name: gsd-explore
+disable-model-invocation: true
 description: "Socratic ideation and idea routing — think through ideas before committing to plans"
 allowed-tools:
   - Read

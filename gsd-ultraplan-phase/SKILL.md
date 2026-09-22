@@ -1,5 +1,6 @@
 ---
 name: gsd-ultraplan-phase
+disable-model-invocation: true
 description: "[BETA] Offload plan phase to Claude Code's ultraplan cloud; review in browser and import back."
 argument-hint: "[phase-number]"
 allowed-tools:

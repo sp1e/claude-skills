@@ -1,5 +1,6 @@
 ---
 name: gsd-progress
+disable-model-invocation: true
 description: "Check progress, advance workflow, or dispatch freeform intent — the unified GSD situational command"
 argument-hint: "[--forensic | --next | --do \\\"task description\\\"]"
 allowed-tools:

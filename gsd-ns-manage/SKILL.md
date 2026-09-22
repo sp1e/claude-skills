@@ -1,5 +1,6 @@
 ---
 name: gsd-ns-manage
+disable-model-invocation: true
 description: "config workspace | workstreams thread update ship inbox"
 allowed-tools:
   - Read

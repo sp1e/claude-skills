@@ -1,5 +1,6 @@
 ---
 name: gsd-map-codebase
+disable-model-invocation: true
 description: "Analyze codebase with parallel mapper agents to produce .planning/codebase/ documents"
 argument-hint: "[--fast [--focus tech|arch|quality|concerns]] [--query <term>|status|diff|refresh] [area]"
 allowed-tools:

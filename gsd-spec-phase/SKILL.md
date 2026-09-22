@@ -1,5 +1,6 @@
 ---
 name: gsd-spec-phase
+disable-model-invocation: true
 description: "Clarify WHAT a phase delivers with ambiguity scoring; produces a SPEC.md before discuss-phase."
 argument-hint: "<phase> [--auto] [--text]"
 allowed-tools:

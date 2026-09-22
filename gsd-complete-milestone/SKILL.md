@@ -1,5 +1,6 @@
 ---
 name: gsd-complete-milestone
+disable-model-invocation: true
 description: "Archive completed milestone and prepare for next version"
 argument-hint: "<version>"
 allowed-tools:

@@ -1,5 +1,6 @@
 ---
 name: gsd-fast
+disable-model-invocation: true
 description: "Execute a trivial task inline — no subagents, no planning overhead"
 argument-hint: "[task description]"
 allowed-tools:

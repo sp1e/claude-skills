@@ -1,5 +1,6 @@
 ---
 name: gsd-ns-workflow
+disable-model-invocation: true
 description: "workflow | discuss plan execute verify phase progress"
 allowed-tools:
   - Read

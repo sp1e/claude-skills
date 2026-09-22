@@ -1,5 +1,6 @@
 ---
 name: gsd-ns-project
+disable-model-invocation: true
 description: "project lifecycle | milestones audits summary"
 allowed-tools:
   - Read

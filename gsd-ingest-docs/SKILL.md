@@ -1,5 +1,6 @@
 ---
 name: gsd-ingest-docs
+disable-model-invocation: true
 description: "Bootstrap or merge a .planning/ setup from existing ADRs, PRDs, SPECs, and docs in a repo."
 argument-hint: "[path] [--mode new|merge] [--manifest <file>] [--resolve auto|interactive]"
 allowed-tools:

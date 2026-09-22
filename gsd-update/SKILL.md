@@ -1,5 +1,6 @@
 ---
 name: gsd-update
+disable-model-invocation: true
 description: "Update GSD to latest version with changelog display"
 argument-hint: "[--sync | --reapply]"
 allowed-tools:

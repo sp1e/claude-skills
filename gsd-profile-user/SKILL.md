@@ -1,5 +1,6 @@
 ---
 name: gsd-profile-user
+disable-model-invocation: true
 description: "Generate developer behavioral profile and create Claude-discoverable artifacts"
 argument-hint: "[--questionnaire] [--refresh]"
 allowed-tools:

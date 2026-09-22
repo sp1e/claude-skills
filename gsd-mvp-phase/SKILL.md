@@ -1,5 +1,6 @@
 ---
 name: gsd-mvp-phase
+disable-model-invocation: true
 description: "Plan a phase as a vertical MVP slice — user story, SPIDR splitting, then plan-phase"
 argument-hint: "<phase-number>"
 allowed-tools:

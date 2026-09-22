@@ -1,5 +1,6 @@
 ---
 name: gsd-review-backlog
+disable-model-invocation: true
 description: "Review and promote backlog items to active milestone"
 allowed-tools:
   - Read

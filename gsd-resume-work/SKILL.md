@@ -1,5 +1,6 @@
 ---
 name: gsd-resume-work
+disable-model-invocation: true
 description: "Resume work from previous session with full context restoration"
 allowed-tools:
   - Read

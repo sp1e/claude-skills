@@ -1,5 +1,6 @@
 ---
 name: gsd-eval-review
+disable-model-invocation: true
 description: "Audit an executed AI phase's evaluation coverage and produce an EVAL-REVIEW.md remediation plan."
 argument-hint: "[phase number]"
 allowed-tools:

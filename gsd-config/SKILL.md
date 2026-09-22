@@ -1,5 +1,6 @@
 ---
 name: gsd-config
+disable-model-invocation: true
 description: "Configure GSD settings — workflow toggles, advanced knobs, integrations, and model profile"
 argument-hint: "[--advanced | --integrations | --profile <name>]"
 allowed-tools:

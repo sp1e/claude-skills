@@ -1,5 +1,6 @@
 ---
 name: gsd-audit-uat
+disable-model-invocation: true
 description: "Cross-phase audit of all outstanding UAT and verification items"
 allowed-tools:
   - Read

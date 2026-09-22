@@ -1,6 +1,9 @@
 ---
 name: removing-from-a-synced-copy-is-temporary
-description: "Use when deleting or editing something in a directory that an install or sync script populates — installed skills, vendored dependencies, dotfiles, a deploy target, a generated config tree. The removal reverts at the next sync unless it also reaches the source the installer reads AND any explicit list the installer iterates. Trigga på 'radera', 'ta bort', 'städa', 'avinstallera', 'sync-skript', 'kommer tillbaka', 'installerad kopia', '~/.claude/skills', 'vendored', 'generated'."
+description: >-
+  Use when deleting or editing something in a directory that an install or sync script
+  populates — installed skills, vendored dependencies, dotfiles, a deploy target, a generated
+  config tree.
 metadata:
   origin: auto-extracted
 ---

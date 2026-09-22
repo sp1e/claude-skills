@@ -1,5 +1,6 @@
 ---
 name: gsd-ns-context
+disable-model-invocation: true
 description: "codebase intelligence | map graphify docs learnings"
 allowed-tools:
   - Read

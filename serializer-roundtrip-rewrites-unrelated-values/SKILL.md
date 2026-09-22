@@ -1,6 +1,8 @@
 ---
 name: serializer-roundtrip-rewrites-unrelated-values
-description: "Use when changing one value inside a structured file that someone else's tool owns — JSON, YAML, XML, TOML — parse-modify-serialize silently rewrites values you never touched. Replace the text instead, then measure the diff to prove the edit was surgical. Triggers on 'change a field in', 'update the config file', 'patch JSON', 'visual.json', 'clean diff', 'just one line'."
+description: >-
+  Use when changing one value inside a structured file that someone else's tool owns — JSON,
+  YAML, XML, TOML — parse-modify-serialize silently rewrites values you never touched.
 metadata:
   origin: auto-extracted
 ---

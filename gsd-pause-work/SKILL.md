@@ -1,5 +1,6 @@
 ---
 name: gsd-pause-work
+disable-model-invocation: true
 description: "Create context handoff when pausing work mid-phase"
 argument-hint: "[--report]"
 allowed-tools:

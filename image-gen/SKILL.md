@@ -1,6 +1,10 @@
 ---
 name: image-gen
-description: Generate images from a text prompt via Hugging Face. Use WHENEVER the user asks to create/generate/make/render an image, picture, illustration, artwork, logo, or visual from a description (e.g. "generate an image of...", "make a picture of...", "render...", "/image-gen"), AND whenever you yourself decide an image would help. ALWAYS asks which engine to use (krea-official, sdxl, qwen-image, flux.1-krea-dev, higgsfield) before generating. Requires the Hugging Face MCP server (authenticated) for the MCP engine and HF_TOKEN for the official gradio_client engines; higgsfield additionally spends PAID credits and must be price-flagged before use.
+description: >-
+  Generate images from a text prompt via Hugging Face. Use WHENEVER the user asks to
+  create/generate/make/render an image, picture, illustration, artwork, logo, or visual from a
+  description (e.g. "generate an image of...", "make a picture of...", "render...",
+  "/image-gen"), AND whenever you yourself decide an image would help.
 ---
 
 # image-gen

@@ -1,6 +1,8 @@
 ---
 name: zerogpu-failure-class-triage
-description: "Use when a Hugging Face Space call fails with a GPU-sounding error — three classes look alike but need opposite responses: transient queue (retry works), account quota exhausted (retrying cannot help), and Space has no GPU assigned (only the owner can fix). Also covers why training cannot run on ZeroGPU at all."
+description: >-
+  Use when a Hugging Face Space call fails with a GPU-sounding error — three classes look
+  alike but need opposite responses.
 metadata:
   origin: auto-extracted
 ---

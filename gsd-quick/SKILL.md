@@ -1,5 +1,6 @@
 ---
 name: gsd-quick
+disable-model-invocation: true
 description: "Execute a quick task with GSD guarantees (atomic commits, state tracking) but skip optional agents"
 argument-hint: "[list | status <slug> | resume <slug> | --full] [--validate] [--discuss] [--research] [task description]"
 allowed-tools:

@@ -1,5 +1,6 @@
 ---
 name: gsd-audit-milestone
+disable-model-invocation: true
 description: "Audit milestone completion against original intent before archiving"
 argument-hint: "[version]"
 allowed-tools:

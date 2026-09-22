@@ -1,6 +1,8 @@
 ---
 name: spot-check-is-not-full-verification
-description: "Use when about to claim two artifacts are equivalent or that something doesn't exist, based on checking only the parts expected to matter — before asserting it, enumerate the full set the claim covers and verify every part, not just the suspect ones."
+description: >-
+  Use when about to claim two artifacts are equivalent or that something doesn't exist, based
+  on checking only the parts expected to matter.
 metadata:
   origin: auto-extracted
 ---

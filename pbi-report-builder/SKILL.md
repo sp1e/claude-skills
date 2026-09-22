@@ -1,6 +1,9 @@
 ---
 name: pbi-report-builder
-description: "[power-bi] Power BI PBIR Report Builder with IBCS Visuals. Generates Power BI report pages, visuals, and IBCS-compliant variance charts by writing PBIR JSON files directly into PBIP project folders. Use this skill EVERY TIME the user asks to: create a Power BI report page, add visuals to a report, generate KPI cards, create charts or tables in Power BI, build a dashboard layout with visuals, create IBCS variance charts, create actual vs plan visuals, or programmatically create Power BI visuals. Also trigger when the user mentions 'PBIR', 'IBCS', 'variance chart', 'variance table', 'actual vs plan', 'actual vs comparison', 'create visuals', 'add a page', 'build a report', 'KPI cards', 'place visuals', or wants to generate Power BI report content through code. If the user mentions any combination of Power BI + visuals/page/report/KPI/chart/table/IBCS/variance + create/build/generate/add, use this skill."
+description: >-
+  [power-bi] Power BI PBIR Report Builder with IBCS Visuals. Generates Power BI report pages,
+  visuals, and IBCS-compliant variance charts by writing PBIR JSON files directly into PBIP
+  project folders.
 ---
 
 # PBIR Report Builder

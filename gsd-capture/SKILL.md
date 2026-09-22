@@ -1,5 +1,6 @@
 ---
 name: gsd-capture
+disable-model-invocation: true
 description: "Capture ideas, tasks, notes, and seeds to their destination"
 argument-hint: "[--note | --backlog | --seed | --list] [text]"
 allowed-tools:

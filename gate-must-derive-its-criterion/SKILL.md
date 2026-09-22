@@ -1,6 +1,8 @@
 ---
 name: gate-must-derive-its-criterion
-description: "Use when writing or reviewing a check that verifies another mechanism — a CI gate, a contract check, a lint rule, a guard over a build or sync script, a structural assertion. Two failure modes it prevents: a gate that RESTATES the rule instead of deriving it from the mechanism raises false alarms and gets waved through, and a check whose NAME embeds a measured count goes stale the moment the count moves. Also: a green test suite is not a typecheck, and a gate that MANUFACTURES its own fixture is two programs where only one is reviewed. Triggers on 'contract check', 'CI gate', 'guard script', 'false positive', 'check name', 'closed set', 'enumerated allowlist', 'gate failed but the code is fine', 'passed then failed on the same code', unseeded fixture, generated test input, flaky gate, synthetic probe."
+description: >-
+  Use when writing or reviewing a check that verifies another mechanism — a CI gate, a
+  contract check, a lint rule, a guard over a build or sync script, a structural assertion.
 metadata:
   origin: auto-extracted
 ---

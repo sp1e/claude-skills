@@ -1,5 +1,6 @@
 ---
 name: gsd-manager
+disable-model-invocation: true
 description: "Interactive command center for managing multiple phases from one terminal"
 argument-hint: "[--analyze-deps]"
 allowed-tools:

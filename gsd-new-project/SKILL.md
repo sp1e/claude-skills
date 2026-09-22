@@ -1,5 +1,6 @@
 ---
 name: gsd-new-project
+disable-model-invocation: true
 description: "Initialize a new project with deep context gathering and PROJECT.md"
 argument-hint: "[--auto]"
 allowed-tools:

@@ -1,5 +1,6 @@
 ---
 name: gsd-review
+disable-model-invocation: true
 description: "Request cross-AI peer review of phase plans from external AI CLIs"
 argument-hint: "--phase N [--gemini] [--claude] [--codex] [--opencode] [--qwen] [--cursor] [--all]"
 allowed-tools:

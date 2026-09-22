@@ -1,5 +1,6 @@
 ---
 name: gsd-settings
+disable-model-invocation: true
 description: "Configure GSD workflow toggles and model profile"
 allowed-tools:
   - Read

@@ -1,5 +1,6 @@
 ---
 name: gsd-verify-work
+disable-model-invocation: true
 description: "Validate built features through conversational UAT"
 argument-hint: "[phase number, e.g., '4']"
 allowed-tools:

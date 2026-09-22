@@ -1,5 +1,6 @@
 ---
 name: gsd-ns-review
+disable-model-invocation: true
 description: "quality gates | code review debug audit security eval ui"
 allowed-tools:
   - Read

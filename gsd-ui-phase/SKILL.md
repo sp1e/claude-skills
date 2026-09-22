@@ -1,5 +1,6 @@
 ---
 name: gsd-ui-phase
+disable-model-invocation: true
 description: "Generate UI design contract (UI-SPEC.md) for frontend phases"
 argument-hint: "[phase]"
 allowed-tools:

@@ -1,5 +1,6 @@
 ---
 name: gsd-ns-ideate
+disable-model-invocation: true
 description: "exploration capture | explore sketch spike spec capture"
 allowed-tools:
   - Read

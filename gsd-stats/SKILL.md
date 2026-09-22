@@ -1,5 +1,6 @@
 ---
 name: gsd-stats
+disable-model-invocation: true
 description: "Display project statistics — phases, plans, requirements, git metrics, and timeline"
 allowed-tools:
   - Read

@@ -1,6 +1,8 @@
 ---
 name: printed-expectation-is-not-an-assertion
-description: "Use when writing or reviewing a verification script, smoke test or release gate that prints a computed value next to an expected one — printing both proves nothing unless the code compares them and exits non-zero, and a hardcoded expectation stops describing the thing under test as soon as the subject moves on."
+description: >-
+  Use when writing or reviewing a verification script, smoke test or release gate that prints
+  a computed value next to an expected one.
 metadata:
   origin: auto-extracted
 ---
