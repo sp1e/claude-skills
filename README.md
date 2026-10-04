@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **120 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **131 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,9 +19,9 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-120 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+131 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
-### Analysis, BI & general (50)
+### Analysis, BI & general (61)
 
 | Skill | Description |
 | --- | --- |
@@ -53,6 +53,17 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [manual-step-masks-writer-reader-mismatch](manual-step-masks-writer-reader-mismatch/SKILL.md) | Use when a tool is about to read a file its own pipeline produced, or when a script that has worked for months suddenly fails on data nobody changed. |
 | [methodology-explainer](methodology-explainer/SKILL.md) | Explain analysis methodology to diverse audiences. |
 | [metric-reconciliation](metric-reconciliation/SKILL.md) | Cross-source metric validation and discrepancy investigation. |
+| [persona-ai-engineering-team](persona-ai-engineering-team/SKILL.md) | Runs four senior roles in sequence (Architect, Engineer, Reviewer, Optimizer), each improving the previous output. |
+| [persona-codebase-audit](persona-codebase-audit/SKILL.md) | Senior-engineer audit of an unfamiliar codebase. |
+| [persona-devops-deployment](persona-devops-deployment/SKILL.md) | Senior DevOps persona preparing an app for production. |
+| [persona-performance-engineer](persona-performance-engineer/SKILL.md) | Performance-engineer persona. |
+| [persona-production-debugging](persona-production-debugging/SKILL.md) | Debugging persona for critical production failures. |
+| [persona-refactor-architect](persona-refactor-architect/SKILL.md) | Senior software-architect persona that rebuilds messy code into clean, modular, scalable architecture while preserving behavior exactly. |
+| [persona-security-audit](persona-security-audit/SKILL.md) | Security-engineer audit of your own production app. |
+| [persona-senior-frontend](persona-senior-frontend/SKILL.md) | Frontend persona for production UI systems. |
+| [persona-startup-mvp](persona-startup-mvp/SKILL.md) | Senior full-stack persona that designs the complete system architecture first, then builds the smallest version that can still scale. |
+| [persona-systems-architect](persona-systems-architect/SKILL.md) | Systems-architect persona for startup backends. |
+| [persona-tech-lead](persona-tech-lead/SKILL.md) | Senior tech-lead persona. |
 | [planning-with-files](planning-with-files/SKILL.md) | Implements Manus-style file-based planning to organize and track progress on complex tasks. |
 | [printed-expectation-is-not-an-assertion](printed-expectation-is-not-an-assertion/SKILL.md) | Use when writing or reviewing a verification script, smoke test or release gate that prints a computed value next to an expected one. |
 | [programmatic-eda](programmatic-eda/SKILL.md) | Systematic exploratory data analysis. |
