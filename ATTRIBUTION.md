@@ -101,3 +101,26 @@ Each skill's `SKILL.md` retains its upstream `license:` and `author:` frontmatte
 > A pre-install security audit of all 91 upstream skills (static code, prompt-injection and
 > supply-chain scans) returned **PASS** — no obfuscation, no hidden characters, no credential
 > access, no unexpected network egress.
+
+## Matt Pocock's skills (17 skills)
+
+From [**mattpocock/skills**](https://github.com/mattpocock/skills) (via the fork
+[sp1e/skills](https://github.com/sp1e/skills), commit `49dd158`), licensed under the
+**MIT License** (© 2026 Matt Pocock). Full license text:
+[`licenses/mattpocock-skills-MIT.txt`](licenses/mattpocock-skills-MIT.txt).
+
+codebase-design, domain-modeling, prototype, improve-codebase-architecture, grill-with-docs,
+wizard, handoff, to-questionnaire, wait-what, claude-handoff, setup-ts-deep-modules,
+writing-beats, writing-fragments, writing-shape, migrate-to-shoehorn, scaffold-exercises,
+setup-pre-commit
+
+Local changes: `improve-codebase-architecture` and `grill-with-docs` call `grill-me` instead
+of upstream `grilling`; `wizard` is set to `disable-model-invocation: true`; `handoff` and
+`claude-handoff` save to the handover folder set in the user's CLAUDE.md instead of the OS temp directory.
+The remaining 21 upstream skills were left out because they overlap skills already in use.
+
+## stop-slop (1 skill)
+
+From [**hardikpandya/stop-slop**](https://github.com/hardikpandya/stop-slop) (commit
+`8da1f03`), licensed under the **MIT License**. Unmodified. Full license text:
+[`licenses/stop-slop-MIT.txt`](licenses/stop-slop-MIT.txt).

@@ -1,6 +1,6 @@
 # claude-skills
 
-A curated collection of **131 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
+A curated collection of **149 [Claude Agent Skills](https://agentskills.io)**. Each skill is a folder with a `SKILL.md` plus any supporting `references/`, `scripts/`, or `assets/`.
 
 ## Install
 
@@ -19,9 +19,9 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 
 ## Skills
 
-131 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
+149 skills, grouped by area. Click a name for its `SKILL.md`. Regenerate this list with `python scripts/gen_readme.py`.
 
-### Analysis, BI & general (61)
+### Analysis, BI & general (79)
 
 | Skill | Description |
 | --- | --- |
@@ -35,24 +35,31 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [business-metrics-calculator](business-metrics-calculator/SKILL.md) | Standard business metric calculation with industry benchmarks. |
 | [chat-attachment-is-not-a-file](chat-attachment-is-not-a-file/SKILL.md) | Use when a task must read, edit, upscale, composite or train on an image or document the user pasted into chat. |
 | [claude-code-mastery](claude-code-mastery/SKILL.md) | Använd vid arbete med Claude Codes egen konfiguration: skriva eller optimera en CLAUDE.md, skapa en ny skill. |
+| [claude-handoff](claude-handoff/SKILL.md) | Hand the current conversation off to a fresh background agent that picks up the work immediately. |
+| [codebase-design](codebase-design/SKILL.md) | Shared vocabulary for designing deep modules. |
 | [codex-cli-specialist](codex-cli-specialist/SKILL.md) | OpenAI Codex CLI and cross-platform skill authoring. |
 | [cohort-analysis](cohort-analysis/SKILL.md) | Time-based cohort analysis with retention and behaviour tracking. |
 | [dashboard-specification](dashboard-specification/SKILL.md) | Design specifications for effective dashboards. |
 | [data-catalog-entry](data-catalog-entry/SKILL.md) | Create standardized metadata for data assets. |
 | [data-narrative-builder](data-narrative-builder/SKILL.md) | Build compelling data-driven narratives. |
 | [data-quality-audit](data-quality-audit/SKILL.md) | Comprehensive data quality assessment against business rules, schema constraints, and freshness expectations. |
+| [domain-modeling](domain-modeling/SKILL.md) | Build and sharpen a project's domain model. |
 | [executive-summary-generator](executive-summary-generator/SKILL.md) | Create concise executive summaries from detailed analysis. |
 | [focused-fix](focused-fix/SKILL.md) | This skill should be used when the user asks to "fix a bug with minimal changes", "analyze change scope for a bugfix", "find the minimal set of files to change", "do a focused bugfix", or "scope a minimal repair". |
 | [funnel-analysis](funnel-analysis/SKILL.md) | Conversion funnel analysis with drop-off investigation. |
 | [gate-must-derive-its-criterion](gate-must-derive-its-criterion/SKILL.md) | Use when writing or reviewing a check that verifies another mechanism — a CI gate, a contract check, a lint rule, a guard over a build or sync script, a structural assertion. |
 | [google-workspace-cli](google-workspace-cli/SKILL.md) | This skill should be used when the user asks to "audit Google Workspace", "check GWS security settings", "set up Google Workspace authentication", "diagnose Workspace issues", or "review Google admin configurations". |
+| [grill-with-docs](grill-with-docs/SKILL.md) | A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go. |
+| [handoff](handoff/SKILL.md) | Compact the current conversation into a handoff document for another agent to pick up. |
 | [identity-is-not-validation](identity-is-not-validation/SKILL.md) | Use when a cross-check reproduces a figure to near-zero deviation, when a ratio between two columns is constant across every period. |
 | [image-gen](image-gen/SKILL.md) | Generate images from a text prompt via Hugging Face. |
 | [impact-quantification](impact-quantification/SKILL.md) | Estimate and communicate business impact of insights. |
+| [improve-codebase-architecture](improve-codebase-architecture/SKILL.md) | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. |
 | [insight-synthesis](insight-synthesis/SKILL.md) | Transform data findings into compelling insights. |
 | [manual-step-masks-writer-reader-mismatch](manual-step-masks-writer-reader-mismatch/SKILL.md) | Use when a tool is about to read a file its own pipeline produced, or when a script that has worked for months suddenly fails on data nobody changed. |
 | [methodology-explainer](methodology-explainer/SKILL.md) | Explain analysis methodology to diverse audiences. |
 | [metric-reconciliation](metric-reconciliation/SKILL.md) | Cross-source metric validation and discrepancy investigation. |
+| [migrate-to-shoehorn](migrate-to-shoehorn/SKILL.md) | Migrate test files from `as` type assertions to @total-typescript/shoehorn. |
 | [persona-ai-engineering-team](persona-ai-engineering-team/SKILL.md) | Runs four senior roles in sequence (Architect, Engineer, Reviewer, Optimizer), each improving the previous output. |
 | [persona-codebase-audit](persona-codebase-audit/SKILL.md) | Senior-engineer audit of an unfamiliar codebase. |
 | [persona-devops-deployment](persona-devops-deployment/SKILL.md) | Senior DevOps persona preparing an app for production. |
@@ -67,24 +74,35 @@ cd claude-skills && zip -r <skill-name>.zip <skill-name>
 | [planning-with-files](planning-with-files/SKILL.md) | Implements Manus-style file-based planning to organize and track progress on complex tasks. |
 | [printed-expectation-is-not-an-assertion](printed-expectation-is-not-an-assertion/SKILL.md) | Use when writing or reviewing a verification script, smoke test or release gate that prints a computed value next to an expected one. |
 | [programmatic-eda](programmatic-eda/SKILL.md) | Systematic exploratory data analysis. |
+| [prototype](prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
 | [query-validation](query-validation/SKILL.md) | SQL query review for correctness, performance, and best practices. |
 | [removing-from-a-synced-copy-is-temporary](removing-from-a-synced-copy-is-temporary/SKILL.md) | Use when deleting or editing something in a directory that an install or sync script populates — installed skills, vendored dependencies, dotfiles, a deploy target, a generated config tree. |
 | [root-cause-investigation](root-cause-investigation/SKILL.md) | Systematic investigation of metric changes and anomalies. |
+| [scaffold-exercises](scaffold-exercises/SKILL.md) | Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. |
 | [segmentation-analysis](segmentation-analysis/SKILL.md) | Customer/user segmentation with actionable insights. |
 | [semantic-model-builder](semantic-model-builder/SKILL.md) | Build structured semantic layer documentation for metrics, dimensions, and entities. |
 | [senior-backend](senior-backend/SKILL.md) | Backend development with Node.js/Express/Fastify and PostgreSQL. |
 | [serializer-roundtrip-rewrites-unrelated-values](serializer-roundtrip-rewrites-unrelated-values/SKILL.md) | Use when changing one value inside a structured file that someone else's tool owns — JSON, YAML, XML, TOML — parse-modify-serialize silently rewrites values you never touched. |
+| [setup-pre-commit](setup-pre-commit/SKILL.md) | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. |
+| [setup-ts-deep-modules](setup-ts-deep-modules/SKILL.md) | Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. |
 | [skill-security-auditor](skill-security-auditor/SKILL.md) | Security audit and vulnerability scanning for AI agent skills before install. |
 | [skill-tester](skill-tester/SKILL.md) | Validate and score Claude Code skill packages for quality, completeness, and best-practice compliance. |
 | [spot-check-is-not-full-verification](spot-check-is-not-full-verification/SKILL.md) | Use when about to claim two artifacts are equivalent or that something doesn't exist, based on checking only the parts expected to matter. |
 | [stakeholder-requirements-gathering](stakeholder-requirements-gathering/SKILL.md) | Structured requirements elicitation for analysis requests. |
+| [stop-slop](stop-slop/SKILL.md) | Remove AI writing patterns from prose. |
 | [sv3d](sv3d/SKILL.md) | Stable Video 3D (SV3D) — turn a SINGLE image of an object into an orbital novel-view VIDEO (image→video/3D). |
 | [technical-to-business-translator](technical-to-business-translator/SKILL.md) | Translate technical analysis into business language. |
 | [time-series-analysis](time-series-analysis/SKILL.md) | Temporal pattern detection and forecasting. |
+| [to-questionnaire](to-questionnaire/SKILL.md) | Turn a decision you can't fully answer into a questionnaire for someone else to fill in. |
 | [visualization-builder](visualization-builder/SKILL.md) | Create effective, publication-ready data visualizations. |
+| [wait-what](wait-what/SKILL.md) | Stop. |
 | [web-artifacts-builder](web-artifacts-builder/SKILL.md) | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). |
 | [web-ui-verification](web-ui-verification/SKILL.md) | This skill should be used when the user asks to "verify the UI works", "check if this is clickable", "the layout breaks", "hidden isn't hiding", "it still looks old after deploying", "it says it's loading but nothing... |
+| [wizard](wizard/SKILL.md) | Generate an interactive bash wizard that walks a human through steps only they can perform. |
 | [write-a-skill](write-a-skill/SKILL.md) | Author, lint, and publish skill packages that satisfy the library authoring standard. |
+| [writing-beats](writing-beats/SKILL.md) | Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it. |
+| [writing-fragments](writing-fragments/SKILL.md) | Writing, explore: mine raw fragments, no structure yet. |
+| [writing-shape](writing-shape/SKILL.md) | Writing, exploit: shape raw material into an article, paragraph by paragraph. |
 | [zerogpu-failure-class-triage](zerogpu-failure-class-triage/SKILL.md) | Use when a Hugging Face Space call fails with a GPU-sounding error — three classes look alike but need opposite responses. |
 
 ### Power BI (3)
