@@ -1,6 +1,11 @@
 ---
 name: semantic-model-builder
-description: Build structured semantic layer documentation for metrics, dimensions, and entities. Activate when you need to define a business metric, document a data model, or create YAML definitions compatible with dbt Semantic Layer or similar frameworks.
+description: >-
+  Build structured semantic layer documentation for metrics, dimensions, and entities, and standardized
+  catalog metadata for data assets. Activate when you need to define a business metric, document a data
+  model, or create YAML definitions compatible with dbt Semantic Layer or similar frameworks. Also use
+  when documenting new datasets, building data catalogs, improving data discoverability, or creating
+  data dictionaries for teams. For Hemfrid's Definitions.xlsx use hemfrid-definitions instead.
 ---
 
 # When to use
@@ -30,3 +35,15 @@ description: Build structured semantic layer documentation for metrics, dimensio
 - `assets/dimension_definition.yaml` — filled dimension YAML definition(s)
 - `assets/entity_definition.yaml` — filled entity YAML definition(s)
 - Validation report from `scripts/model_yaml_validator.py` (inline output)
+
+# Hemfrid
+For Hemfrid's metric definitions in `Definitions.xlsx` (columns A–J), the skill `hemfrid-definitions` applies, not this one.
+
+# Catalog entry for a dataset (merged from data-catalog-entry, 2026-10-12)
+Use when a new table, view or dataset needs to be discoverable, when analysts keep asking what a table means or who owns it, for compliance documentation of sensitive data, or to audit catalog completeness. Files: `references/data-catalog-entry/`.
+1. Technical metadata: schema, columns, types, keys and row count from `INFORMATION_SCHEMA` or the source; automate with `references/data-catalog-entry/scripts/catalog_extractor.py`.
+2. Business context from the data owner: purpose, owning team, criticality, use cases, display name.
+3. One plain-language sentence per column, example values, business rules.
+4. Quality: completeness, freshness (hours since update), duplicate rate, known issues and their downstream effect.
+5. Lineage: upstream sources and downstream consumers (dashboards, models, reports).
+6. Governance: access level, sensitivity (PII, financial, health), compliance tags, retention, access instructions. Fill in `references/data-catalog-entry/assets/catalog_entry_template.md`; standards in `references/data-catalog-entry/references/catalog_standards.md`.

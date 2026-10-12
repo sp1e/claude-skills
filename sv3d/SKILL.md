@@ -34,7 +34,7 @@ The caller below is correct and ready — it just needs a GPU-backed Space behin
 - **Input**: one image of a single, centered object. `--remove-bg` strips the background first (recommended). Square images orbit best.
 - `--version`: `sv3d_u` (fixed orbit) or `sv3d_p` (elevation-conditioned; use `--elevation`).
 - Reuses the **image-gen venv** (`Claude\tools\image-gen\.venv`, has `gradio_client`). Needs `HF_TOKEN`.
-- Output: an `.mp4` saved to `C:\Users\simon.pettersson\Claude\generated-videos\`.
+- Output: an `.mp4` saved to `C:\Users\simon.pettersson\Claude\generated-videos\` (or `--out <file|dir>`). The folder does not exist until the first run; the script creates it (`os.makedirs(..., exist_ok=True)`), so do not treat a missing folder as an error.
 - The script auto-retries transient ZeroGPU queue errors and gives a clear hint for the "no GPU hardware" case.
 
 ## Notes
